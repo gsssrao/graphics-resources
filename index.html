@@ -16,6 +16,7 @@ layout: blank
       {{ page.excerpt }}
     {% unless page.excerpt == page.content %}
     <footer><a class="ghost" href="{{ page.url | prepend: site.baseurl }}">{{ site.more }}</a></footer>
+    <hr>
     {% endunless %}
   </article>
 {% endfor %}

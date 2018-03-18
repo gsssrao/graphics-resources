@@ -16,76 +16,55 @@ logo.increment = function() { logo.value++; }
 </script>
 <img class="logo" onclick="
 if (window.logo.value == 0) {
-    this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png';
+    this.src='/images/Cornell_box.png';
     this.style='position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;';
     window.logo.increment();
 }
 else if (window.logo.value == 1){
-	this.src='https://d1h5h8zrlhf4xk.cloudfront.net/wp-content/uploads/2016/08/TJ2_ART_CURIOS_Utah-Teapot-Wireframe_480px.png';
+	this.src='/images/teapot.png';
 	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
 	window.logo.increment();	
 }
 else if (window.logo.value == 2){
-	this.src='http://www.tinysg.de/img/dragon.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
+	this.src='/images/dragon.png';
+	this.style='position:absolute; TOP: 2.5%; LEFT:3%; WIDTH:13%;';
 	window.logo.increment();	
 }
 else if (window.logo.value == 3){
-	this.src='http://feeblemind.tuxfamily.org/blog/images/atelier-improbable/smoothing/suzanne-solid.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:12%;';
+	this.src='/images/suzanne.png';
+	this.style='position:absolute; TOP: 3.5%; LEFT:3.5%; WIDTH:12%;';
 	window.logo.increment();
 }
 else if (window.logo.value == 4){
-	this.src='https://tiborstanko.sk/assets/cescg2014/bunny_weights/bunny_3000F_03.png';
+	this.src='/images/bunny.png';
 	this.style='position:absolute; TOP: 1.5%; LEFT:5%; WIDTH:9%;';
 	window.logo.value = 0;
 }
-" onload="
-if(window.logo.value == 0){
-	this.src='https://tiborstanko.sk/assets/cescg2014/bunny_weights/bunny_3000F_03.png';
-    this.style='position:absolute; TOP: 1.5%; LEFT:5%; WIDTH:9%;';
-}
-else if (window.logo.value == 1) {
-    this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png';
-    this.style='position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;';
-}
-else if (window.logo.value == 2){
-	this.src='https://d1h5h8zrlhf4xk.cloudfront.net/wp-content/uploads/2016/08/TJ2_ART_CURIOS_Utah-Teapot-Wireframe_480px.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
-}
-else if (window.logo.value == 3){
-	this.src='http://www.tinysg.de/img/dragon.png';
-	this.style='position:absolute; TOP: 2%; LEFT:2.5%; WIDTH:12%;';
-}
-else if (window.logo.value == 4){
-	this.src='http://feeblemind.tuxfamily.org/blog/images/atelier-improbable/smoothing/suzanne-solid.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:12%;';
-}
-" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
+" src="/images/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
 
 <title>
  OpenGL and Shaders › Graphics Resources
 </title>
-<link rel="canonical" href="http://localhost:4000/graphics-resources/text/2018/03/15/openglandshaders/">
+<link rel="canonical" href="http://localhost:4000/text/2018/03/15/openglandshaders/">
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="/graphics-resources/basic.css" rel="stylesheet">
-<link href="/graphics-resources/highlight.css" rel="stylesheet">
-<link href="/graphics-resources/index.css" rel="stylesheet">
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/graphics-resources/feed.xml" title="Graphics Resources" />
+<link href="/basic.css" rel="stylesheet">
+<link href="/highlight.css" rel="stylesheet">
+<link href="/index.css" rel="stylesheet">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Graphics Resources" />
 <script src="//disqus-contrast.disqus.com/embed.js" async></script>
 
 <header>
-  <h1><a href="/graphics-resources">Graphics Resources</a></h1>
+  <h1><a href="">Graphics Resources</a></h1>
   <nav>
-    <div><a href="/graphics-resources/">Home</a><a href="/graphics-resources/archive/">Posts</a><a href="/graphics-resources/glossary/">Glossary</a><a href="/graphics-resources/research/">Research</a><a href="/graphics-resources/about/">About</a></div>
+    <div><a href="/">Home</a><a href="/archive/">Posts</a><a href="/glossary/">Glossary</a><a href="/research/">Research</a><a href="/about/">About</a></div>
     <div><a href="https://github.com/gsssrao/graphics-resources"><i class="fa fa-github"></i></a><a href="mailto:sairao1996@gmail.com"><i class="fa fa-envelope"></i></a></div>
   </nav>
 </header>
 <main>
   <article>
     <header>
-      <h1><a href="/graphics-resources/text/2018/03/15/openglandshaders/">OpenGL and Shaders</a></h1>
+      <h1><a href="/text/2018/03/15/openglandshaders/">OpenGL and Shaders</a></h1>
       <time datetime="2018-03-15T03:00:00+05:30">March 15, 2018</time>
       <br>
     </header>
@@ -115,21 +94,20 @@ else if (window.logo.value == 4){
 </ul>
 </li>
 </ul>
+
 <style type="text/css">	
 img.img {
     width: 75%;
 }
 </style>
 
-<h2 id="opengl">
-<a id="opengl" class="anchor" href="#opengl" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>OpenGL</strong>
-</h2>
+<h2 id="opengl"><strong>OpenGL</strong></h2>
 
 <p>If this is your first time reading computer graphics then terms like OpenGL and Shaders might be new to you. To explain it, I would use the following diagram:</p>
 
 <center>
 <figure>
-<img class="img" src="https://mdn.mozillademos.org/files/13334/mdn-games-3d-rendering-pipeline.png" alt="Rendering Pipeline">
+<img class="img" src="https://mdn.mozillademos.org/files/13334/mdn-games-3d-rendering-pipeline.png" alt="Rendering Pipeline" />
 <figcaption>Rendering Pipeline (Reference: Mozilla)</figcaption>
 </figure>
 </center>
@@ -143,9 +121,7 @@ img.img {
 <p>The main advantage of using these APIs is that a user gets to control almost each and every part of the rendering pipeline and perform necessary optimizations. In the long run, it is always useful to learn atleast one of these APIs (hence most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course). But, a new user can always use other tools like <a href="https://threejs.org/">three.js</a> (a wrapper around WebGL granting high level access), Unity3D (game engine) etc to significantly reduce programming effort. For example to create a Facebook 3D post of rotating earth you literally require <strong>0 lines of code</strong> if you use threejs:</p>
 
 <center>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">Creating <a href="https://twitter.com/facebook?ref_src=twsrc%5Etfw">@facebook</a> 3D posts with <a href="https://t.co/jLTyKERwDZ">https://t.co/jLTyKERwDZ</a> <a href="https://t.co/joZJ5jB4Ly">pic.twitter.com/joZJ5jB4Ly</a></p>— Ricardo Cabello (@mrdoob) <a href="https://twitter.com/mrdoob/status/967110744566153216?ref_src=twsrc%5Etfw">February 23, 2018</a>
-</blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Creating <a href="https://twitter.com/facebook?ref_src=twsrc%5Etfw">@facebook</a> 3D posts with <a href="https://t.co/jLTyKERwDZ">https://t.co/jLTyKERwDZ</a> <a href="https://t.co/joZJ5jB4Ly">pic.twitter.com/joZJ5jB4Ly</a></p>&mdash; Ricardo Cabello (@mrdoob) <a href="https://twitter.com/mrdoob/status/967110744566153216?ref_src=twsrc%5Etfw">February 23, 2018</a></blockquote>
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
 
@@ -153,140 +129,79 @@ img.img {
 
 <p>Hence, in the subsequent subsections I list various resources for OpenGL. Since knowing the tools are also important, my next post is about these tools.</p>
 
-<h3 id="learning-opengl">
-<a id="learning-opengl" class="anchor" href="#learning-opengl" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Learning OpenGL</strong>
-</h3>
+<h3 id="learning-opengl"><strong>Learning OpenGL</strong></h3>
 
-<h4 id="books">
-<a id="books" class="anchor" href="#books" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Books</strong>
-</h4>
+<h4 id="books"><strong>Books</strong></h4>
 
 <p>In my first post, I had listed some books for learning computer graphics. Usually, some of those books also cover OpenGL. <a href="http://www.realtimerendering.com/books.html">Realtime Rendering</a> has an awesome and updated graphics page with most recent books on Computer Graphics and programming. I would recommend going to their page if you are looking to buy a book on some part of graphics.</p>
 
 <p>One of the most popular books on OpenGL is <a href="https://smile.amazon.com/OpenGL-Superbible-Comprehensive-Tutorial-Reference/dp/0672337479">OpenGL SuperBible</a>.</p>
 
-<h4 id="videos">
-<a id="videos" class="anchor" href="#videos" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Videos</strong>
-</h4>
+<h4 id="videos"><strong>Videos</strong></h4>
 
 <ul>
-  <li>
-<a href="https://www.youtube.com/watch?v=6-9XFm7XAT8">Siggraph 2013 video</a> on “Introduction to OpenGL” Programming.</li>
-  <li>
-<a href="https://www.youtube.com/playlist?list=PLRtjMdoYXLf6zUMDJVRZYV-6g6n62vet8">Sonar Systems</a>: Nice set of tutorials on Modern OpneGL 3.0+ (Windows as well as Mac environment setup explained). Covers even advance topics like Obj loading etc.</li>
-  <li>
-<a href="https://www.youtube.com/playlist?list=PLSPw4ASQYyymu3PfG9gxywSPghnSMiOAW">MakingGamesWithBen</a>: Tutorials on OpenGL 2D game development.</li>
-  <li>
-<a href="https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh">thebennybox</a>: Tutorials on OpenGL development.</li>
-  <li>
-<a href="https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP">ThinMatrix</a>: Tutorials on OpenGL-3D game development in Java.</li>
+  <li><a href="https://www.youtube.com/watch?v=6-9XFm7XAT8">Siggraph 2013 video</a> on “Introduction to OpenGL” Programming.</li>
+  <li><a href="https://www.youtube.com/playlist?list=PLRtjMdoYXLf6zUMDJVRZYV-6g6n62vet8">Sonar Systems</a>: Nice set of tutorials on Modern OpneGL 3.0+ (Windows as well as Mac environment setup explained). Covers even advance topics like Obj loading etc.</li>
+  <li><a href="https://www.youtube.com/playlist?list=PLSPw4ASQYyymu3PfG9gxywSPghnSMiOAW">MakingGamesWithBen</a>: Tutorials on OpenGL 2D game development.</li>
+  <li><a href="https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh">thebennybox</a>: Tutorials on OpenGL development.</li>
+  <li><a href="https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP">ThinMatrix</a>: Tutorials on OpenGL-3D game development in Java.</li>
 </ul>
 
-<h4 id="websites">
-<a id="websites" class="anchor" href="#websites" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Websites</strong>
-</h4>
+<h4 id="websites"><strong>Websites</strong></h4>
 
 <p>Some of the websites with tutorials on OpenGL (Reference: <a href="https://github.com/eug/awesome-opengl#websites">Awesome page</a> of OpenGL)</p>
 <ul>
-  <li>
-<a href="https://learnopengl.com">Learn OpenGL</a> by <strong>Joey de Vries</strong>
-</li>
-  <li>
-<a href="https://bitbucket.org/alfonse/gltut/wiki/Home">Learning Modern 3D Graphics Programming</a> by <strong>Jason L. McKesson</strong>
-</li>
-  <li>
-<a href="http://www.lighthouse3d.com/tutorials/glsl-core-tutorial">Light House 3D</a> by <strong>Light House 3D</strong>
-</li>
-  <li>
-<a href="http://www.tomdalling.com/blog/category/modern-opengl">Modern OpenGL</a> by <strong>Tom Dalling</strong>
-</li>
-  <li>
-<a href="https://github.com/McNopper/OpenGL">OpenGL Examples</a> by <strong>Norbert Nopper</strong>
-</li>
-  <li>
-<a href="http://ogldev.atspace.co.uk">OpenGL Step by Step</a> by <strong>Etay Meiri</strong>
-</li>
-  <li>
-<a href="https://open.gl">OpenGL Tutorial</a> by <strong>Alexander Overvoorde</strong>
-</li>
-  <li>
-<a href="http://antongerdelan.net/opengl/index.html">OpenGL Tutorial</a> by <strong>Anton Gerdelan</strong>
-</li>
-  <li>
-<a href="http://www.opengl-tutorial.org">OpenGL Tutorial</a> by <strong>Bonder Wu</strong>
-</li>
-  <li>
-<a href="http://www.songho.ca/opengl">OpenGL Tutorial</a> by <strong>Song Ho Ahn</strong>
-</li>
+  <li><a href="https://learnopengl.com">Learn OpenGL</a> by <strong>Joey de Vries</strong></li>
+  <li><a href="https://bitbucket.org/alfonse/gltut/wiki/Home">Learning Modern 3D Graphics Programming</a> by <strong>Jason L. McKesson</strong></li>
+  <li><a href="http://www.lighthouse3d.com/tutorials/glsl-core-tutorial">Light House 3D</a> by <strong>Light House 3D</strong></li>
+  <li><a href="http://www.tomdalling.com/blog/category/modern-opengl">Modern OpenGL</a> by <strong>Tom Dalling</strong></li>
+  <li><a href="https://github.com/McNopper/OpenGL">OpenGL Examples</a> by <strong>Norbert Nopper</strong></li>
+  <li><a href="http://ogldev.atspace.co.uk">OpenGL Step by Step</a> by <strong>Etay Meiri</strong></li>
+  <li><a href="https://open.gl">OpenGL Tutorial</a> by <strong>Alexander Overvoorde</strong></li>
+  <li><a href="http://antongerdelan.net/opengl/index.html">OpenGL Tutorial</a> by <strong>Anton Gerdelan</strong></li>
+  <li><a href="http://www.opengl-tutorial.org">OpenGL Tutorial</a> by <strong>Bonder Wu</strong></li>
+  <li><a href="http://www.songho.ca/opengl">OpenGL Tutorial</a> by <strong>Song Ho Ahn</strong></li>
 </ul>
 
-<h3 id="opengl-libraries">
-<a id="opengl-libraries" class="anchor" href="#opengl-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>OpenGL Libraries</strong>
-</h3>
+<h3 id="opengl-libraries"><strong>OpenGL Libraries</strong></h3>
 
 <p>Knowing what libraries to use is also important. It can help save the time spent exploring random libraries with limited support. Some of the widely used OpenGL libraries are (Reference: <a href="https://github.com/eug/awesome-opengl#libraries">Awesome page</a> of OpenGL):</p>
 
 <ul>
-  <li>
-<a href="http://assimp.sourceforge.net">assimp</a> - Portable library to import 3D models in a uniform manner.</li>
-  <li>
-<a href="http://bulletphysics.org/wordpress">Bullet</a> - It provides state of the art collision detection, soft body and rigid body dynamics.</li>
-  <li>
-<a href="http://freeglut.sourceforge.net">freeGLUT</a> - Mature library that allows to create/manage windows containing OpenGL contexts.</li>
-  <li>
-<a href="http://www.glfw.org">GLFW</a> - Modern library for creating/interact windows with OpenGL contexts.</li>
-  <li>
-<a href="https://github.com/brackeen/glfm">GLFM</a> - Supplies an OpenGL ES context and input events for mobile devices and the web.</li>
-  <li>
-<a href="http://glm.g-truc.net/0.9.6/index.html">glm</a> - Mathematics library for graphics software based on the GLSL specifications.</li>
-  <li>
-<a href="https://github.com/mosra/magnum">Magnum</a> - It is a 2D/3D graphics engine for modern OpenGL.</li>
-  <li>
-<a href="http://google.github.io/mathfu/">MathFu</a> - C++ math library developed primarily for games focused on simplicity and efficiency.</li>
-  <li>
-<a href="http://newtondynamics.com/forum/newton.php">Newton</a> - It is a cross-platform life-like physics.</li>
-  <li>
-<a href="http://oglplus.org">OGLplus</a> - Collection of libraries which implement an object-oriented facade over OpenGL.</li>
-  <li>
-<a href="http://www.libsdl.org">SDL</a> - Designed to provide low level access to multimedia and graphics hardware.</li>
-  <li>
-<a href="http://www.sfml-dev.org">SFML</a> - Simple interface to ease the development of games and multimedia applications.</li>
-  <li>
-<a href="http://www.lonesock.net/soil.html">SOIL</a> - Tiny C library used primarily for uploading textures into OpenGL. (see <a href="https://bitbucket.org/SpartanJ/soil2">SOIL2</a>)</li>
-  <li>
-<a href="https://github.com/stevenlovegrove/Pangolin">Pangolin</a> - Lightweight portable rapid development library for managing OpenGL display / interaction and abstracting video input.</li>
+  <li><a href="http://assimp.sourceforge.net">assimp</a> - Portable library to import 3D models in a uniform manner.</li>
+  <li><a href="http://bulletphysics.org/wordpress">Bullet</a> - It provides state of the art collision detection, soft body and rigid body dynamics.</li>
+  <li><a href="http://freeglut.sourceforge.net">freeGLUT</a> - Mature library that allows to create/manage windows containing OpenGL contexts.</li>
+  <li><a href="http://www.glfw.org">GLFW</a> - Modern library for creating/interact windows with OpenGL contexts.</li>
+  <li><a href="https://github.com/brackeen/glfm">GLFM</a> - Supplies an OpenGL ES context and input events for mobile devices and the web.</li>
+  <li><a href="http://glm.g-truc.net/0.9.6/index.html">glm</a> - Mathematics library for graphics software based on the GLSL specifications.</li>
+  <li><a href="https://github.com/mosra/magnum">Magnum</a> - It is a 2D/3D graphics engine for modern OpenGL.</li>
+  <li><a href="http://google.github.io/mathfu/">MathFu</a> - C++ math library developed primarily for games focused on simplicity and efficiency.</li>
+  <li><a href="http://newtondynamics.com/forum/newton.php">Newton</a> - It is a cross-platform life-like physics.</li>
+  <li><a href="http://oglplus.org">OGLplus</a> - Collection of libraries which implement an object-oriented facade over OpenGL.</li>
+  <li><a href="http://www.libsdl.org">SDL</a> - Designed to provide low level access to multimedia and graphics hardware.</li>
+  <li><a href="http://www.sfml-dev.org">SFML</a> - Simple interface to ease the development of games and multimedia applications.</li>
+  <li><a href="http://www.lonesock.net/soil.html">SOIL</a> - Tiny C library used primarily for uploading textures into OpenGL. (see <a href="https://bitbucket.org/SpartanJ/soil2">SOIL2</a>)</li>
+  <li><a href="https://github.com/stevenlovegrove/Pangolin">Pangolin</a> - Lightweight portable rapid development library for managing OpenGL display / interaction and abstracting video input.</li>
 </ul>
 
-<h3 id="opengl-profile-loaders">
-<a id="opengl-profile-loaders" class="anchor" href="#opengl-profile-loaders" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>OpenGL Profile Loaders</strong>
-</h3>
+<h3 id="opengl-profile-loaders"><strong>OpenGL Profile Loaders</strong></h3>
 
 <ul>
-  <li>
-<a href="https://github.com/skaslev/gl3w">gl3w</a> - Simple OpenGL core profile loader.</li>
-  <li>
-<a href="https://github.com/Dav1dde/glad">glad</a> - Multi profile loader-generator based on the official specs.</li>
-  <li>
-<a href="https://github.com/nnesse/glbindify">glbindify</a> - Commmand line tool to generate C bindings for OpenGL, wgl, and glX.</li>
-  <li>
-<a href="https://github.com/cginternals/glbinding">glbinding</a> - Profile loader leveraging C++11 features to provide type safety.</li>
-  <li>
-<a href="http://glew.sourceforge.net">GLEW</a> - Mature cross-platform library to load OpenGL extensions.</li>
-  <li>
-<a href="https://bitbucket.org/alfonse/glloadgen/wiki/Home">glLoadGen</a> - Multi profile loader-generator written in Lua.</li>
+  <li><a href="https://github.com/skaslev/gl3w">gl3w</a> - Simple OpenGL core profile loader.</li>
+  <li><a href="https://github.com/Dav1dde/glad">glad</a> - Multi profile loader-generator based on the official specs.</li>
+  <li><a href="https://github.com/nnesse/glbindify">glbindify</a> - Commmand line tool to generate C bindings for OpenGL, wgl, and glX.</li>
+  <li><a href="https://github.com/cginternals/glbinding">glbinding</a> - Profile loader leveraging C++11 features to provide type safety.</li>
+  <li><a href="http://glew.sourceforge.net">GLEW</a> - Mature cross-platform library to load OpenGL extensions.</li>
+  <li><a href="https://bitbucket.org/alfonse/glloadgen/wiki/Home">glLoadGen</a> - Multi profile loader-generator written in Lua.</li>
 </ul>
 
-<h3 id="opengl-documentation">
-<a id="opengl-documentation" class="anchor" href="#opengl-documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>OpenGL Documentation</strong>
-</h3>
+<h3 id="opengl-documentation"><strong>OpenGL Documentation</strong></h3>
 
 <p>For documentation and API information, the place to go to is the <a href="https://www.khronos.org/opengl/">official page on OpenGL</a> by Khronos Group. It contains various useful links like <a href="https://www.khronos.org/files/opengl46-quick-reference-card.pdf">cheat sheets</a>, <a href="https://www.khronos.org/opengl/wiki">wiki</a> etc.</p>
 
-<hr>
+<hr />
 
-<h2 id="shaders">
-<a id="shaders" class="anchor" href="#shaders" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Shaders</strong>
-</h2>
+<h2 id="shaders"><strong>Shaders</strong></h2>
 
 <p>As I had explained in the <a href="#opengl">first section</a> shader helps you control what happens in the arrows. By definition, a shader is a user-defined program designed to run on some stage of a graphics processor. Its purpose is to execute one of the programmable stages of the rendering pipeline. The word “Shader” comes from the word “Shading” which is a technique for producing appropriate levels of color, light etc in an image.</p>
 
@@ -295,13 +210,10 @@ img.img {
 <p>In OpenGL shading language there are 5 types of shaders:</p>
 
 <ul>
-  <li>Vertex Shaders: <code class="highlighter-rouge">GL_VERTEX_SHADER</code>
-</li>
+  <li>Vertex Shaders: <code class="highlighter-rouge">GL_VERTEX_SHADER</code></li>
   <li>Tessellation Control and Evaluation Shaders: <code class="highlighter-rouge">GL_TESS_CONTROL_SHADER</code> and <code class="highlighter-rouge">GL_TESS_EVALUATION_SHADER</code>. (requires GL 4.0 or ARB_tessellation_shader)</li>
-  <li>Geometry Shaders: <code class="highlighter-rouge">GL_GEOMETRY_SHADER</code>
-</li>
-  <li>Fragment Shaders: <code class="highlighter-rouge">GL_FRAGMENT_SHADER</code>
-</li>
+  <li>Geometry Shaders: <code class="highlighter-rouge">GL_GEOMETRY_SHADER</code></li>
+  <li>Fragment Shaders: <code class="highlighter-rouge">GL_FRAGMENT_SHADER</code></li>
   <li>Compute Shaders: <code class="highlighter-rouge">GL_COMPUTE_SHADER</code>. (requires GL 4.3 or ARB_compute_shader)</li>
 </ul>
 
@@ -315,25 +227,18 @@ img.img {
 <iframe onload="this.width=screen.width*0.3;this.height=screen.height*0.3;" frameborder="0" src="https://www.shadertoy.com/embed/4s3SRN?gui=true&amp;t=10&amp;paused=true&amp;muted=false" allowfullscreen=""></iframe>
 </div>
 
-<h3 id="learning-shader-programming">
-<a id="learning-shader-programming" class="anchor" href="#learning-shader-programming" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Learning Shader Programming</strong>
-</h3>
+<h3 id="learning-shader-programming"><strong>Learning Shader Programming</strong></h3>
 
-<h4 id="books-1">
-<a id="books-1" class="anchor" href="#books-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Books</strong>
-</h4>
+<h4 id="books-1"><strong>Books</strong></h4>
 
 <p>Like I had mentioned before, realtime rendering’s <a href="http://www.realtimerendering.com/books.html">book page</a> is really good and contains a nice collection of computer graphics related to books. So, if you are looking to learn a specific shader language, you should look up corresponding book on that page.</p>
 
-<h4 id="websites-and-tutorials">
-<a id="websites-and-tutorials" class="anchor" href="#websites-and-tutorials" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Websites and Tutorials</strong>
-</h4>
+<h4 id="websites-and-tutorials"><strong>Websites and Tutorials</strong></h4>
 
 <p>If you would like to learn fragment shaders, there are a lot of websites with tutorials on it like <a href="https://thebookofshaders.com/00/">The Book on Shaders</a>. The really cool part of a fragment shader is that, with just one quad (rectangle), you can do really cool stuff.</p>
 
 <ul>
-  <li>
-<a href="https://www.shadertoy.com/">Shadertoy</a> is a WebGL based shader sharing platform. It has a really huge collection of fragment shaders. It was created by Pol Jeremias and Inigo Quilez from Pixar Animation Studios. The website makes it really easy to write shaders and link other stuff like keyboard inpur, sound, microphone input etc.</li>
+  <li><a href="https://www.shadertoy.com/">Shadertoy</a> is a WebGL based shader sharing platform. It has a really huge collection of fragment shaders. It was created by Pol Jeremias and Inigo Quilez from Pixar Animation Studios. The website makes it really easy to write shaders and link other stuff like keyboard inpur, sound, microphone input etc.</li>
 </ul>
 
 <p>If you are new to shaders, I would <strong>highly recommend</strong> going through the following video by Pol Jeremias:</p>
@@ -345,8 +250,7 @@ img.img {
 <p>I had attended a similar session at Siggraph Asia 2017. It is a really nice tutorial on fragment shaders and assumes that you have zero background knowledge.</p>
 
 <ul>
-  <li>
-<a href="http://www.iquilezles.org/www/index.htm">Inigo Quilez’s Website</a>: Inigo Quilez’s website has some really nice experiments, tutorials, code on doing different effects using shaders.</li>
+  <li><a href="http://www.iquilezles.org/www/index.htm">Inigo Quilez’s Website</a>: Inigo Quilez’s website has some really nice experiments, tutorials, code on doing different effects using shaders.</li>
 </ul>
 
     
@@ -359,7 +263,7 @@ img.img {
 
 
 <footer>
-	<a href="/graphics-resources/text/2018/03/15/introtographics/">« Introduction to Computer Graphics</a>
-    <a href="/graphics-resources/text/2018/03/15/tools/">Tools for Computer Graphics »</a>
+	<a href="/text/2018/03/15/introtographics/">« Introduction to Computer Graphics</a>
+    <a href="/text/2018/03/15/tools/">Tools for Computer Graphics »</a>
 </footer>
 

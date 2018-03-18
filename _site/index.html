@@ -16,69 +16,48 @@ logo.increment = function() { logo.value++; }
 </script>
 <img class="logo" onclick="
 if (window.logo.value == 0) {
-    this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png';
+    this.src='/images/Cornell_box.png';
     this.style='position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;';
     window.logo.increment();
 }
 else if (window.logo.value == 1){
-	this.src='https://d1h5h8zrlhf4xk.cloudfront.net/wp-content/uploads/2016/08/TJ2_ART_CURIOS_Utah-Teapot-Wireframe_480px.png';
+	this.src='/images/teapot.png';
 	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
 	window.logo.increment();	
 }
 else if (window.logo.value == 2){
-	this.src='http://www.tinysg.de/img/dragon.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
+	this.src='/images/dragon.png';
+	this.style='position:absolute; TOP: 2.5%; LEFT:3%; WIDTH:13%;';
 	window.logo.increment();	
 }
 else if (window.logo.value == 3){
-	this.src='http://feeblemind.tuxfamily.org/blog/images/atelier-improbable/smoothing/suzanne-solid.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:12%;';
+	this.src='/images/suzanne.png';
+	this.style='position:absolute; TOP: 3.5%; LEFT:3.5%; WIDTH:12%;';
 	window.logo.increment();
 }
 else if (window.logo.value == 4){
-	this.src='https://tiborstanko.sk/assets/cescg2014/bunny_weights/bunny_3000F_03.png';
+	this.src='/images/bunny.png';
 	this.style='position:absolute; TOP: 1.5%; LEFT:5%; WIDTH:9%;';
 	window.logo.value = 0;
 }
-" onload="
-if(window.logo.value == 0){
-	this.src='https://tiborstanko.sk/assets/cescg2014/bunny_weights/bunny_3000F_03.png';
-    this.style='position:absolute; TOP: 1.5%; LEFT:5%; WIDTH:9%;';
-}
-else if (window.logo.value == 1) {
-    this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png';
-    this.style='position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;';
-}
-else if (window.logo.value == 2){
-	this.src='https://d1h5h8zrlhf4xk.cloudfront.net/wp-content/uploads/2016/08/TJ2_ART_CURIOS_Utah-Teapot-Wireframe_480px.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
-}
-else if (window.logo.value == 3){
-	this.src='http://www.tinysg.de/img/dragon.png';
-	this.style='position:absolute; TOP: 2%; LEFT:2.5%; WIDTH:12%;';
-}
-else if (window.logo.value == 4){
-	this.src='http://feeblemind.tuxfamily.org/blog/images/atelier-improbable/smoothing/suzanne-solid.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:12%;';
-}
-" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
+" src="/images/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
 
 <title>
  Home › Graphics Resources
 </title>
-<link rel="canonical" href="http://localhost:4000/graphics-resources/">
+<link rel="canonical" href="http://localhost:4000/">
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="/graphics-resources/basic.css" rel="stylesheet">
-<link href="/graphics-resources/highlight.css" rel="stylesheet">
-<link href="/graphics-resources/index.css" rel="stylesheet">
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/graphics-resources/feed.xml" title="Graphics Resources" />
+<link href="/basic.css" rel="stylesheet">
+<link href="/highlight.css" rel="stylesheet">
+<link href="/index.css" rel="stylesheet">
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Graphics Resources" />
 
 
 <header>
-  <h1><a href="/graphics-resources">Graphics Resources</a></h1>
+  <h1><a href="">Graphics Resources</a></h1>
   <nav>
-    <div><a href="/graphics-resources/">Home</a><a href="/graphics-resources/archive/">Posts</a><a href="/graphics-resources/glossary/">Glossary</a><a href="/graphics-resources/research/">Research</a><a href="/graphics-resources/about/">About</a></div>
+    <div><a href="/">Home</a><a href="/archive/">Posts</a><a href="/glossary/">Glossary</a><a href="/research/">Research</a><a href="/about/">About</a></div>
     <div><a href="https://github.com/gsssrao/graphics-resources"><i class="fa fa-github"></i></a><a href="mailto:sairao1996@gmail.com"><i class="fa fa-envelope"></i></a></div>
   </nav>
 </header>
@@ -86,14 +65,53 @@ else if (window.logo.value == 4){
   
   <article>
     <header>
-      <h1><a href="/graphics-resources/text/2018/03/15/tools/">Tools for Computer Graphics</a></h1>
+      <h1><a href="/text/2018/03/15/tools/">Tools for Computer Graphics</a></h1>
       <time datetime="2018-03-15T04:07:00+05:30">March 15, 2018</time>
       <br>
       
-      19 min read
+      20 min read
     </header>
       
-      <style type="text/css">	
+      <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#basic-tools">Basic Tools</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#modelling-texturing-rendering--animation">Modelling, Texturing, Rendering &amp; Animation</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#blender">Blender</a></li>
+<li class="toc-entry toc-h4"><a href="#maya">Maya</a></li>
+<li class="toc-entry toc-h4"><a href="#3ds-max">3DS Max</a></li>
+<li class="toc-entry toc-h4"><a href="#cinema4d">Cinema4D</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#game-engines--web">Game Engines &amp; Web</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#unity-3d">Unity-3D</a></li>
+<li class="toc-entry toc-h4"><a href="#unreal">Unreal</a></li>
+<li class="toc-entry toc-h4"><a href="#threejs">threejs</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#image-and-video-manipulation">Image and Video manipulation</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#specialized-tools">Specialized Tools</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#sculpting-and-3d-modelling">Sculpting and 3D modelling</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#mudbox">Mudbox</a></li>
+<li class="toc-entry toc-h4"><a href="#zbrush">Zbrush</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#animation-and-vfx">Animation and VFX</a></li>
+<li class="toc-entry toc-h3"><a href="#mitsuba---ray-tracer">Mitsuba - Ray Tracer</a></li>
+<li class="toc-entry toc-h3"><a href="#cgal-geometry-processing">CGAL (Geometry Processing)</a></li>
+<li class="toc-entry toc-h3"><a href="#media-art-and-visual-design-processing-language">Media Art and Visual Design (Processing language)</a></li>
+<li class="toc-entry toc-h3"><a href="#meshpoint-cloud-operations">Mesh/Point Cloud Operations</a></li>
+<li class="toc-entry toc-h3"><a href="#spriteimage-editing">Sprite/Image Editing</a></li>
+</ul>
+</li>
+</ul>
+
+<style type="text/css">	
 img.img {
     width: 75%;
 }
@@ -101,30 +119,50 @@ img.img {
 
 <p>In the previous post, I mentioned some resources related to OpenGL and Shaders. In this post I plan to list some of the tools which are popular and widely used in computer graphics. I also plan to briefly list the pros and cons of some of the tools. I will not be listing tutorials for these tools but you can easily find plenty of them by Googling. This is going to be a long post hence, if you are not interested in some parts like “Specialized Tools” section, I recommend skipping those parts.</p>
 
-<h2 id="basic-tools"><strong>Basic Tools</strong></h2>
-
-<p>In this section, I classify some basic tools as per their function (subsections) and use. In general for making a decent application or a game, knowledge of atleast one tool per subsection is required and recommended.</p>
-
-<h3 id="modelling-texturing-rendering--animation"><strong>Modelling, Texturing, Rendering &amp; Animation</strong></h3>
-
-<p>The first step of any graphics application development would be modelling an object and texturing it. This is usually followed by lighting, rendering and/or animation. Doing any of these steps like modelling can be really cumbersome in something like OpenGL hence it is better to use these tools instead. You can of course load a modelled and textured object back in OpenGL if your final application is being developed in OpenGL. If it is being developed in any other application like Unity3D, Android etc you can still use these tools. These tools also support a wide variety of 3D model formats (like .obj, .fbx, .colloda etc) and hence can also be used for model conversion, modification of existing 3D models etc.</p>
-
 
     
-    <footer><a class="ghost" href="/graphics-resources/text/2018/03/15/tools/">read more »</a></footer>
+    <footer><a class="ghost" href="/text/2018/03/15/tools/">read more »</a></footer>
+    <hr>
     
   </article>
 
   <article>
     <header>
-      <h1><a href="/graphics-resources/text/2018/03/15/openglandshaders/">OpenGL and Shaders</a></h1>
+      <h1><a href="/text/2018/03/15/openglandshaders/">OpenGL and Shaders</a></h1>
       <time datetime="2018-03-15T03:00:00+05:30">March 15, 2018</time>
       <br>
       
       16 min read
     </header>
       
-      <style type="text/css">	
+      <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#opengl">OpenGL</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#learning-opengl">Learning OpenGL</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#books">Books</a></li>
+<li class="toc-entry toc-h4"><a href="#videos">Videos</a></li>
+<li class="toc-entry toc-h4"><a href="#websites">Websites</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#opengl-libraries">OpenGL Libraries</a></li>
+<li class="toc-entry toc-h3"><a href="#opengl-profile-loaders">OpenGL Profile Loaders</a></li>
+<li class="toc-entry toc-h3"><a href="#opengl-documentation">OpenGL Documentation</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#shaders">Shaders</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#learning-shader-programming">Learning Shader Programming</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#books-1">Books</a></li>
+<li class="toc-entry toc-h4"><a href="#websites-and-tutorials">Websites and Tutorials</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<style type="text/css">	
 img.img {
     width: 75%;
 }
@@ -141,13 +179,10 @@ img.img {
 </figure>
 </center>
 
-<p>The above image is an image of the rendering pipeline. Rendering refers to the process of producing a 2D image from a 3D scene description. So, whenever we display any scene on our computer screen, the scene undergoes above steps in background before we see the final pixels on our screen. So, to control the different parts of this pipeline we use APIs (application programming interfaces) like OpenGL and to control what happens in the arrows (Refer above image), we use something called as “shaders”.</p>
-
-<p>Officially, OpenGL is a family of cross-platform computer graphics APIs that are used to interact with the GPU for rendering. The main advantage of OpenGL is that it is cross-platform (runs on most Operating Systems like Linux, Windows, Mac OSX) and is implemented in most Nvidia and AMD GPUs. There are several versions of the API, and there are implementations, or “bindings” for several different programming languages like C++, Java, Python etc (For the full list refer to this <a href="https://www.khronos.org/opengl/wiki/Language_bindings">link</a>). Versions of OpenGL for embedded systems such as mobile phones are known as OpenGL ES and versions for use on Web pages are called WebGL. Most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course.</p>
-
 
     
-    <footer><a class="ghost" href="/graphics-resources/text/2018/03/15/openglandshaders/">read more »</a></footer>
+    <footer><a class="ghost" href="/text/2018/03/15/openglandshaders/">read more »</a></footer>
+    <hr>
     
   </article>
 
@@ -156,7 +191,7 @@ img.img {
 <footer>
     <a  class="disabled" >« newer posts</a>
     <span class="paginate">page 1 of 2</span>
-    <a  class="gray" href="/graphics-resources/page2" >older posts »</a>
+    <a  class="gray" href="/page2" >older posts »</a>
 </footer>
 
 

@@ -48,10 +48,10 @@ If this is your first time reading computer graphics then terms like OpenGL and 
 </figure>
 </center>	
 
+
 The above image is an image of the rendering pipeline. Rendering refers to the process of producing a 2D image from a 3D scene description. So, whenever we display any scene on our computer screen, the scene undergoes above steps in background before we see the final pixels on our screen. So, to control the different parts of this pipeline we use APIs (application programming interfaces) like OpenGL and to control what happens in the arrows (Refer above image), we use something called as "shaders".
 
 Officially, OpenGL is a family of cross-platform computer graphics APIs that are used to interact with the GPU for rendering. The main advantage of OpenGL is that it is cross-platform (runs on most Operating Systems like Linux, Windows, Mac OSX) and is implemented in most Nvidia and AMD GPUs. There are several versions of the API, and there are implementations, or "bindings" for several different programming languages like C++, Java, Python etc (For the full list refer to this [link](https://www.khronos.org/opengl/wiki/Language_bindings)). Versions of OpenGL for embedded systems such as mobile phones are known as OpenGL ES and versions for use on Web pages are called WebGL. Most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course.
-
 
 Besides OpenGL, there are other APIs for rendering like DirectX and Vulkan. DirectX, developed by Microsoft is also supported by almost all Nvidia and AMD GPUs but it isn't cross-platform and runs only on Windows OS. Vulkan is another API developed by [Khronos Group](https://www.khronos.org/) (the same group that maintains OpenGL). It is more recent (the first version of Vulkan was released in 2016) and the main motivation behind Vulkan was to give programmers and game designers more low-level access to hardware/GPU to boost performance and efficiency. This of course comes at a cost of more significant up-front work on developer's part. As per Khronos the Vulkan API, which will complement (and in some cases replace) OpenGL and OpenGL ES.
 

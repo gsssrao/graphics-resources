@@ -16,52 +16,31 @@ logo.increment = function() { logo.value++; }
 </script>
 <img class="logo" onclick="
 if (window.logo.value == 0) {
-    this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png';
+    this.src='/images/Cornell_box.png';
     this.style='position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;';
     window.logo.increment();
 }
 else if (window.logo.value == 1){
-	this.src='https://d1h5h8zrlhf4xk.cloudfront.net/wp-content/uploads/2016/08/TJ2_ART_CURIOS_Utah-Teapot-Wireframe_480px.png';
+	this.src='/images/teapot.png';
 	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
 	window.logo.increment();	
 }
 else if (window.logo.value == 2){
-	this.src='http://www.tinysg.de/img/dragon.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
+	this.src='/images/dragon.png';
+	this.style='position:absolute; TOP: 2.5%; LEFT:3%; WIDTH:13%;';
 	window.logo.increment();	
 }
 else if (window.logo.value == 3){
-	this.src='http://feeblemind.tuxfamily.org/blog/images/atelier-improbable/smoothing/suzanne-solid.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:12%;';
+	this.src='/images/suzanne.png';
+	this.style='position:absolute; TOP: 3.5%; LEFT:3.5%; WIDTH:12%;';
 	window.logo.increment();
 }
 else if (window.logo.value == 4){
-	this.src='https://tiborstanko.sk/assets/cescg2014/bunny_weights/bunny_3000F_03.png';
+	this.src='/images/bunny.png';
 	this.style='position:absolute; TOP: 1.5%; LEFT:5%; WIDTH:9%;';
 	window.logo.value = 0;
 }
-" onload="
-if(window.logo.value == 0){
-	this.src='https://tiborstanko.sk/assets/cescg2014/bunny_weights/bunny_3000F_03.png';
-    this.style='position:absolute; TOP: 1.5%; LEFT:5%; WIDTH:9%;';
-}
-else if (window.logo.value == 1) {
-    this.src='https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png';
-    this.style='position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;';
-}
-else if (window.logo.value == 2){
-	this.src='https://d1h5h8zrlhf4xk.cloudfront.net/wp-content/uploads/2016/08/TJ2_ART_CURIOS_Utah-Teapot-Wireframe_480px.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
-}
-else if (window.logo.value == 3){
-	this.src='http://www.tinysg.de/img/dragon.png';
-	this.style='position:absolute; TOP: 2%; LEFT:2.5%; WIDTH:12%;';
-}
-else if (window.logo.value == 4){
-	this.src='http://feeblemind.tuxfamily.org/blog/images/atelier-improbable/smoothing/suzanne-solid.png';
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:12%;';
-}
-" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
+" src="/images/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
 
 <title>
 {% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}
