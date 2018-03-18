@@ -2,8 +2,34 @@
 title:  "OpenGL and Shaders"
 date:   2018-03-14 21:30:00
 categories: text
-toc: true
 ---
+
+<ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#opengl">OpenGL</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#learning-opengl">Learning OpenGL</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#books">Books</a></li>
+<li class="toc-entry toc-h4"><a href="#videos">Videos</a></li>
+<li class="toc-entry toc-h4"><a href="#websites">Websites</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#opengl-libraries">OpenGL Libraries</a></li>
+<li class="toc-entry toc-h3"><a href="#opengl-profile-loaders">OpenGL Profile Loaders</a></li>
+<li class="toc-entry toc-h3"><a href="#opengl-documentation">OpenGL Documentation</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#shaders">Shaders</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#learning-shader-programming">Learning Shader Programming</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#books-1">Books</a></li>
+<li class="toc-entry toc-h4"><a href="#websites-and-tutorials">Websites and Tutorials</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 <style type="text/css">	
 img.img {
