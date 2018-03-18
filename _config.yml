@@ -2,8 +2,8 @@ title: "Graphics Resources"
 author: "Srinivas"
 description: "Collection of resources of computer graphics and a bit of CHI"
 more: "read more »"
-url: "https://gsssrao.github.io/graphics-resources"
-baseurl: "/graphics-resources"
+# url: "https://gsssrao.github.io/graphics-resources"
+baseurl: "http://graphics-resources.info/"
 paginate: 2
 permalink: pretty
 excerpt_separator: "\n\n\n" # two blank lines
