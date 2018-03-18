@@ -1,0 +1,34 @@
+title: "Graphics Resources"
+author: "Srinivas"
+description: "Collection of resources of computer graphics and a bit of CHI"
+more: "read more »"
+url: "https://gsssrao.github.io/graphics-resources"
+baseurl: "/graphics-resources"
+paginate: 2
+permalink: pretty
+excerpt_separator: "\n\n\n" # two blank lines
+
+style:
+  minimalist: false
+  dark: false
+
+navigation:
+  - index.html
+  - archive.html
+  - glossary.md
+  # - equations.md
+  - research.md
+  - about.md
+
+comments:
+  disqus: "disqus-contrast"
+#  isso: "comments.mysite.org"
+
+links: # see http://fontawesome.io/icons/#brand for all possible icons
+  # - twitter: "https://twitter.com/twitter/"
+  - github: "https://github.com/gsssrao/graphics-resources"
+  - envelope: "mailto:sairao1996@gmail.com"
+
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
+sass: {style: expanded}
+plugins: [jekyll-feed, jekyll-paginate, jekyll-toc]

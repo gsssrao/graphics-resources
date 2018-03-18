@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/graphics-resources/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/graphics-resources/" rel="alternate" type="text/html" /><updated>2018-03-18T18:43:09+05:30</updated><id>http://localhost:4000/graphics-resources/</id><title type="html">Graphics Resources</title><subtitle>Collection of resources of computer graphics and a bit of CHI</subtitle><author><name>Srinivas</name></author><entry><title type="html">Tools for Computer Graphics</title><link href="http://localhost:4000/graphics-resources/text/2018/03/15/tools/" rel="alternate" type="text/html" title="Tools for Computer Graphics" /><published>2018-03-15T04:07:00+05:30</published><updated>2018-03-15T04:07:00+05:30</updated><id>http://localhost:4000/graphics-resources/text/2018/03/15/tools</id><content type="html" xml:base="http://localhost:4000/graphics-resources/text/2018/03/15/tools/">&lt;style type=&quot;text/css&quot;&gt;	
+img.img {
+    width: 75%;
+}
+&lt;/style&gt;
+
+&lt;p&gt;In the previous post, I mentioned some resources related to OpenGL and Shaders. In this post I plan to list some of the tools which are popular and widely used in computer graphics. I also plan to briefly list the pros and cons of some of the tools. I will not be listing tutorials for these tools but you can easily find plenty of them by Googling. This is going to be a long post hence, if you are not interested in some parts like “Specialized Tools” section, I recommend skipping those parts.&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-tools&quot;&gt;&lt;strong&gt;Basic Tools&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;In this section, I classify some basic tools as per their function (subsections) and use. In general for making a decent application or a game, knowledge of atleast one tool per subsection is required and recommended.&lt;/p&gt;
+
+&lt;h3 id=&quot;modelling-texturing-rendering--animation&quot;&gt;&lt;strong&gt;Modelling, Texturing, Rendering &amp;amp; Animation&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The first step of any graphics application development would be modelling an object and texturing it. This is usually followed by lighting, rendering and/or animation. Doing any of these steps like modelling can be really cumbersome in something like OpenGL hence it is better to use these tools instead. You can of course load a modelled and textured object back in OpenGL if your final application is being developed in OpenGL. If it is being developed in any other application like Unity3D, Android etc you can still use these tools. These tools also support a wide variety of 3D model formats (like .obj, .fbx, .colloda etc) and hence can also be used for model conversion, modification of existing 3D models etc.&lt;/p&gt;
+
+&lt;h4 id=&quot;blender&quot;&gt;&lt;strong&gt;Blender&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.blender.org/&quot;&gt;Blender&lt;/a&gt; is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation (Reference: Blender). Though it can do game creation, it is not its main purpose and you should use &lt;a href=&quot;#game-engines--web&quot;&gt;game engines&lt;/a&gt; for that. The main use case of blender is modelling, animation and rendering. For example, the following film was entirely made in blender:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe style=&quot;width:48vw; height:27vw&quot; src=&quot;https://www.youtube.com/embed/mN0zPOpADL4&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;h4 id=&quot;maya&quot;&gt;&lt;strong&gt;Maya&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.autodesk.in/products/maya/overview&quot;&gt;Maya&lt;/a&gt; by AutoDesk is a 3D animation, modeling, simulation and rendering software. Though it is not free, it is really powerful and is an industry standard. For example, look at this video portraying features of blender:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;video STYLE=&quot;width:48vw; height:27vw&quot; controls=&quot;controls&quot;&gt;
+&lt;source src=&quot;https://videos.autodesk.com/zencoder/content/dam/autodesk/www/products/autodesk-maya/fy18/overview/videos/maya-overview-video-1920x1080.mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;/center&gt;
+
+&lt;h4 id=&quot;3ds-max&quot;&gt;&lt;strong&gt;3DS Max&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.autodesk.com/products/3ds-max/overview&quot;&gt;3DS Max&lt;/a&gt; by AutoDesk very similar to Maya. Both the softwares are capable of modeling, animation, rigging, particles, key framing, rendering, materials, lighting, FX, and more. But, there are a few use cases where one of them is better than the other. For difference in their capabilities you can look at this &lt;a href=&quot;https://knowledge.autodesk.com/support/3ds-max/learn-explore/caas/sfdcarticles/sfdcarticles/Comparison-of-3ds-Max-and-Maya.html&quot;&gt;post&lt;/a&gt;. An overview of features of 2017 version of 3DS Max can be found here:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;video STYLE=&quot;width:48vw; height:27vw&quot; controls=&quot;controls&quot;&gt;
+&lt;source src=&quot;https://videos.autodesk.com/zencoder/content/dam/autodesk/www/products/autodesk-3dsmax/responsive-center/overview-2017/3ds-max-overview-video-1920x1080.mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;/center&gt;
+
+&lt;h4 id=&quot;cinema4d&quot;&gt;&lt;strong&gt;Cinema4D&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.maxon.net/en/products/cinema-4d/overview/&quot;&gt;Cinema4D&lt;/a&gt; by Maxon is a powerful 3D modeling, motion graphics, painting, and animation software. It is really good for doing some things like motion graphics. Cinema4D is not free but it does have a free student license. An overview of new features in Cinema 4D R19 can be found here:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe style=&quot;width:48vw; height:27vw&quot; src=&quot;https://www.youtube.com/embed/iMKJFhRRBOY&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Though Maya and 3DS Max are paid, a student can apply for a discount and use them free for 3 years.&lt;/p&gt;
+
+&lt;h3 id=&quot;game-engines--web&quot;&gt;&lt;strong&gt;Game Engines &amp;amp; Web&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Once you have models and or animation ready, the next step to make the actual application or game. For this, you can use a Game Engine. By definition, game engines are tools available for game designers to code and plan out a game quickly and easily without building one from the ground up. If you are writing your application in OpenGL, you can of course use libraries and make your application, but game engines make it really easy to do the same. They give lots of functionality and can heavily save your time. In comparison, if you want low level access, infinite flexibility over what is internally going on and want to build everything by yourself, OpenGL is the way to go. In fact, most AAA game studios develop their own game engines from scratch optimized for their specific games. For example, &lt;a href=&quot;https://www.easports.com/fifa&quot;&gt;FIFA&lt;/a&gt; is made using &lt;a href=&quot;https://www.ea.com/frostbite&quot;&gt;Frostbite game engine&lt;/a&gt; developed by EA.&lt;/p&gt;
+
+&lt;h4 id=&quot;unity-3d&quot;&gt;&lt;strong&gt;Unity-3D&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Unity is a cross-platform (even support for Web) game engine developed by Unity Techonologies for building both 3D as well as 2D games. It is probably the most popular game engine and has a free as well as a paid version (with more advanced features). The main advantage of using Unity3D over any other game engine is that almost every new sensor or gadget like &lt;a href=&quot;https://www.oculus.com/rift/&quot;&gt;Oculus Rift&lt;/a&gt;, &lt;a href=&quot;https://www.leapmotion.com/&quot;&gt;Leap Motion&lt;/a&gt;, &lt;a href=&quot;https://vr.google.com/daydream/&quot;&gt;Google Daydream&lt;/a&gt; will have Unity Support for development. It is &lt;strong&gt;the&lt;/strong&gt; game engine for doing AR/VR and CHI related stuff because of inbuilt AR/VR support and availability of lots of plugins. In terms of programming it supports both &lt;strong&gt;C#&lt;/strong&gt; and &lt;strong&gt;JavaScript&lt;/strong&gt;. Unity doesn’t support GLSL shaders and you will have a different syntax for shader programming. But, it does have some new cool features like &lt;a href=&quot;https://www.youtube.com/embed/MwYq_YA59uQ&quot;&gt;shader graph&lt;/a&gt;. Some of the highlights of Unity 2017 are:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe style=&quot;width:48vw; height:27vw&quot; src=&quot;https://www.youtube.com/embed/MwYq_YA59uQ&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It even has &lt;a href=&quot;https://blogs.unity3d.com/2018/03/15/ml-agents-v0-3-beta-released-imitation-learning-feedback-driven-features-and-more/?utm_content=buffera389d&amp;amp;utm_medium=social&amp;amp;utm_source=twitter.com&amp;amp;utm_campaign=buffer&quot;&gt;support&lt;/a&gt; for deep learning (using Tensorflow for reinforcement learning, immitation learning etc):&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+&lt;img class=&quot;img&quot; src=&quot;https://blogs.unity3d.com/wp-content/uploads/2018/03/soccer.gif&quot; /&gt;
+&lt;figcaption&gt;2 vs 2 soccer trained using separate reward functions and brains.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Just this week, Google &lt;a href=&quot;https://maps-apis.googleblog.com/2018/03/the-real-world-as-your-playground-build.html&quot;&gt;announced&lt;/a&gt; Maps API with support for Unity3D. So, you can build real-world based games (obtain 3D model directly from Maps API) using Unity 3D:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe style=&quot;width:48vw; height:27vw&quot; src=&quot;https://www.youtube.com/embed/7Bbd5dbuPBc&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;h4 id=&quot;unreal&quot;&gt;&lt;strong&gt;Unreal&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.unrealengine.com/en-US/what-is-unreal-engine-4&quot;&gt;Unreal&lt;/a&gt; is a game engine developed by Epic Games. In terms of advance graphics capabilities like complex particle simulations, advance dynamic lighting etc Unreal is better than Unity. But, Unreal has lesser plugin support and is more difficult to learn in comparison to Unity. In terms of programming language, Unreal uses C++. Unreal too has a free version similar to Unity3D. Some of the highlight of Unreal Engine are:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe style=&quot;width:48vw; height:27vw&quot; src=&quot;https://www.youtube.com/embed/WC6Xx_jLXmg&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;h4 id=&quot;threejs&quot;&gt;&lt;strong&gt;threejs&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;To discuss &lt;a href=&quot;https://threejs.org/&quot;&gt;threejs&lt;/a&gt;, I will have to mention a few things about Web. Since the advent of gaming engines, people have been trying to do similar things with Web. Programmers have been trying to create wrappers around WebGL which allow users to create rich &lt;a href=&quot;https://threejs.org/examples/css3d_periodictable.html&quot;&gt;3D websites&lt;/a&gt; and games which are rendered in Web Browser (i.e. can be accessed using a URL without downloading anything). An example of such tool is threejs. It is a cross platform javascript API which can be used to create and display animated 3D graphics in a browser. Though it may be not as powerful as game engines like Unreal and Unity, it has the advantage that user doesn’t need to install anything. It too has support for various libraries and can be used for making VR and AR applications using &lt;a href=&quot;https://aframe.io/&quot;&gt;Aframe&lt;/a&gt; etc. Some of really cool websites made with threejs are:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;a href=&quot;https://poly.google.com/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width: 30%;&quot; src=&quot;https://threejs.org/files/projects/poly.png&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.nationalgeographic.com/science/2017/09/cassini-saturn-nasa-3d-grand-tour/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width: 30%;&quot; src=&quot;https://threejs.org/files/projects/cassinigrandtour.png&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.ro.me/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width: 30%;&quot; src=&quot;https://threejs.org/files/projects/rome.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Similar to visual editor in game engines, threejs also has an &lt;a href=&quot;https://threejs.org/editor/&quot;&gt;online editor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;image-and-video-manipulation&quot;&gt;&lt;strong&gt;Image and Video manipulation&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;If you are trying to develop any graphics application, as per your needs you might come across the following problems: converting image/video formats, breaking some video into frames, trimming a video, appending two images etc. For dealing with these problems the following two applications are useful:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.ffmpeg.org/&quot;&gt;FFmpeg&lt;/a&gt;: This is a free cross-platform, command-line tool and can be easily installed. It is literally a swiss army knife for doing anything related to multimedia like converting video formats, encoding them in specific ways, trimming them, breaking them into frames, combining two videos etc. Almost all the operations I have mentioned can be executed in a “single line command”. &lt;strong&gt;Note&lt;/strong&gt;: This is not a tool for making a video/movie. If you want to make a video/movie you should use tools like &lt;a href=&quot;https://www.adobe.com/in/products/premiere.html&quot;&gt;Adobe Premiere Pro&lt;/a&gt;, &lt;a href=&quot;https://www.apple.com/in/final-cut-pro/&quot;&gt;Final Cut Pro X&lt;/a&gt; etc. This is a tool suitable for tweaking multimedia.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.imagemagick.org/script/index.php&quot;&gt;ImageMagick&lt;/a&gt;: This is a free cross-platform, command-line tool and can be easily installed. It is really useful for manipulating images like converting their formats, adjust their colors, resizing them, rotating/flipping them etc. Again like ffmpeg, many of these operations can be executed using a “single line command”. &lt;strong&gt;Note&lt;/strong&gt;: Many of the things that you can do with ImageMagick, you can also do with &lt;a href=&quot;https://www.adobe.com/in/products/photoshop.html&quot;&gt;Adobe Photoshop&lt;/a&gt;. Though Photoshop is way more powerful, Photoshop is not free and is not necessary for doing simple image operations.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;specialized-tools&quot;&gt;Specialized Tools&lt;/h2&gt;
+
+&lt;p&gt;This section contains some specialized tools classified as per their function. The main idea is that if you want to master some specific part of the rendering pipeline, you can learn a specialized tool made for it. For example, in the previous section, for modelling, texturing and animation we used a single tool like Blender. But, if you want more control in say modelling and animation you can use a specialized tool for modelling and a specilized tool for animation.&lt;/p&gt;
+
+&lt;h3 id=&quot;sculpting-and-3d-modelling&quot;&gt;&lt;strong&gt;Sculpting and 3D modelling&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Like I had mentioned before, if you want to master modelling and texturing and do advcaned functions like sculpting, you can learn these specialized tools. They are way more advanced than basic tools and offer more control.&lt;/p&gt;
+
+&lt;h4 id=&quot;mudbox&quot;&gt;&lt;strong&gt;Mudbox&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.autodesk.com/products/mudbox/overview&quot;&gt;Mudbox&lt;/a&gt; by Autodesk is a digital painting and sculpting software for creating and modifying 3D geometry and textures. It can be thought of as 3DSMax/Maya with added support for sculpting. So, if you have experience with Autodesk’s tools, this would be easy to pickup.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;video STYLE=&quot;width:48vw; height:27vw&quot; controls=&quot;controls&quot;&gt;
+&lt;source src=&quot;https://videos.autodesk.com/zencoder/content/dam/autodesk/www/products/autodesk-mudbox/fy18/overview/videos/mudbox-overview-video-1920x1080.mp4&quot; /&gt;
+&lt;/video&gt;
+&lt;/center&gt;
+
+&lt;h4 id=&quot;zbrush&quot;&gt;&lt;strong&gt;Zbrush&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pixologic.com/features/&quot;&gt;Zbrush&lt;/a&gt; too is an industry’s standard tool with focus exclusively on modeling and sculpting. In comparison to basic tools like Blender it is way more specialized in terms of polygon count handling etc. But unlike Mudbox, it has a different UI as compared to Autodesk’s products and hence can be more difficult to learn. Some of the new features of ZBrush 4R8 are:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe style=&quot;width:48vw; height:27vw&quot; src=&quot;https://www.youtube.com/embed/0-g4MtBjKP0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;animation-and-vfx&quot;&gt;&lt;strong&gt;Animation and VFX&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Using tools like Blender, Maya or 3DS Max too you can do rigging and animation but there are specialized tools with focus only on animation. Tools like &lt;a href=&quot;https://www.mixamo.com/&quot;&gt;Mixamo&lt;/a&gt; and &lt;a href=&quot;https://knowledge.autodesk.com/support/maya-lt/learn-explore/caas/CloudHelp/cloudhelp/2017/ENU/MayaLT/files/GUID-EDBDA3DB-4715-40EF-9ADF-412F78BFF98E-htm.html&quot;&gt;HumanIK plugin of Maya LT&lt;/a&gt; are good for character animation.&lt;/p&gt;
+
+&lt;p&gt;Moving on to VFX(visual effects), tools like &lt;a href=&quot;https://www.sidefx.com/&quot;&gt;Houdini&lt;/a&gt; are really good at it. Some of the clips created with Houdini can be seen here:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe src=&quot;https://player.vimeo.com/video/226906993&quot; style=&quot;width:48vw; height:27vw&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;mitsuba---ray-tracer&quot;&gt;&lt;strong&gt;Mitsuba - Ray Tracer&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;In computer graphics research there is field called physically based rendering. I had mentioned this in my first post and about the book &lt;a href=&quot;http://www.pbrt.org/&quot;&gt;PBRT&lt;/a&gt;. If you want to do research in physically based rendering, learning &lt;a href=&quot;https://www.mitsuba-renderer.org/&quot;&gt;Mitsuba&lt;/a&gt; can be really useful. It was developed by Wenzel Jakob who is also an author of the PBRT book. Mitsuba has plugins for other softwares like Blender.&lt;/p&gt;
+
+&lt;h3 id=&quot;cgal-geometry-processing&quot;&gt;&lt;strong&gt;CGAL (Geometry Processing)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.cgal.org/&quot;&gt;Computational Geometry Algorithms Library&lt;/a&gt; is a software project that provides easy access to efficient and reliable geometric algorithms in the form of a C++ library. It is primarily used in computer graphics research especially for geomtery processing.&lt;/p&gt;
+
+&lt;h3 id=&quot;media-art-and-visual-design-processing-language&quot;&gt;&lt;strong&gt;Media Art and Visual Design (Processing language)&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://processing.org/&quot;&gt;Processing&lt;/a&gt; is an open source language built for media art, visual design etc. It also has a javascript binding and hence can be run on web as well. Just going through &lt;a href=&quot;http://hello.processing.org/&quot;&gt;this link&lt;/a&gt; will give you a good idea of Processing.&lt;/p&gt;
+
+&lt;!-- For example, you can create a tree using a small code: --&gt;
+
+&lt;!-- &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js&quot;&gt;&lt;/script&gt;
+&lt;div id=&quot;p5container&quot;&gt;
+&lt;canvas id=&quot;defaultCanvas0&quot; class=&quot;&quot; style=&quot;width: 640px;&quot;&gt;
+&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;/**
+ * Recursive Tree
+ * by Daniel Shiffman.  
+ * 
+ * Renders a simple tree-like structure via recursion. 
+ * The branching angle is calculated as a function of 
+ * the horizontal mouse location. Move the mouse left
+ * and right to change the angle.
+ */
+ 
+var theta;   
+
+function setup() {
+  var canvas = createCanvas(640, 360);
+  canvas.parent(&quot;p5container&quot;);
+}
+
+function draw() {
+  background(0);
+  frameRate(30);
+  stroke(255);
+  // Let's pick an angle 0 to 90 degrees based on the mouse position
+  var a = (mouseX / width) * 90;
+  // Convert it to radians
+  theta = radians(a);
+  // Start the tree from the bottom of the screen
+  translate(width/2,height);
+  // Draw a line 120 pixels
+  line(0,0,0,-120);
+  // Move to the end of that line
+  translate(0,-120);
+  // Start the recursive branching!
+  branch(120);
+}
+
+function branch(h) {
+  // Each branch will be 2/3rds the size of the previous one
+  h *= 0.66;
+  
+  // All recursive functions must have an exit condition!!!!
+  // Here, ours is when the length of the branch is 2 pixels or less
+  if (h &gt; 2) {
+    push();    // Save the current state of transformation (i.e. where are we now)
+    rotate(theta);   // Rotate by theta
+    line(0, 0, 0, -h);  // Draw the branch
+    translate(0, -h); // Move to the end of the branch
+    branch(h);       // Ok, now call myself to draw two new branches!!
+    pop();     // Whenever we get back here, we &quot;pop&quot; in order to restore the previous matrix state
+    
+    // Repeat the same thing, only branch off to the &quot;left&quot; this time!
+    push();
+    rotate(-theta);
+    line(0, 0, 0, -h);
+    translate(0, -h);
+    branch(h);
+    pop();
+  }
+}
+&lt;/script&gt;
+&lt;strong&gt;Recursive Tree&lt;/strong&gt; by Daniel Shiffman. &lt;br&gt;
+&lt;br&gt;
+Renders a simple tree-like structure via recursion. The branching angle is calculated as a function of the horizontal mouse location. Move the mouse left and right to change the angle.
+
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;   
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;640&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;frameRate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;stroke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Let's pick an angle 0 to 90 degrees based on the mouse position&lt;/span&gt;
+  &lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mouseX&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Convert it to radians&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;radians&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Start the tree from the bottom of the screen&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;translate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Draw a line 120 pixels&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Move to the end of that line&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;translate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Start the recursive branching!&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Each branch will be 2/3rds the size of the previous one&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;66&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  
+  &lt;span class=&quot;c1&quot;&gt;// All recursive functions must have an exit condition!!!!&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Here, ours is when the length of the branch is 2 pixels or less&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pushMatrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// Save the current state of transformation (i.e. where are we now)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// Rotate by theta&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// Draw the branch&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;translate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Move to the end of the branch&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;       &lt;span class=&quot;c1&quot;&gt;// Ok, now call myself to draw two new branches!!&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;popMatrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;     &lt;span class=&quot;c1&quot;&gt;// Whenever we get back here, we &quot;pop&quot; in order to restore the previous matrix state&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;// Repeat the same thing, only branch off to the &quot;left&quot; this time!&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pushMatrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;translate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;branch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;popMatrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+	 --&gt;
+
+&lt;h3 id=&quot;meshpoint-cloud-operations&quot;&gt;&lt;strong&gt;Mesh/Point Cloud Operations&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;While developing your application, if you would like to do some specialized operatins like processing your mesh (like simplify it using some algorithms), editing point cloud, computing normals from pointcloud, generating a mesh from point cloud (also known as 3D reconstruction) etc you should use the following tools:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.meshlab.net/&quot;&gt;Meshlab&lt;/a&gt;: is an opensource application for processing and editing 3D triangular meshes. It has a lot of built in algorithms for various applications like 3D reconstruction, hole filling, remeshing textured meshes, simplifying meshes etc.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://pointclouds.org/&quot;&gt;PCL&lt;/a&gt; (Point Cloud Library): PCL is an opensource crossplatform library for 2D/3D image a pointcloud processing. It is mainly used to do point cloud related operations and has support for lots of algorithms like filtering, model fitting, feature estimation etc. It is highly used in computer vision and graphics research community.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;spriteimage-editing&quot;&gt;&lt;strong&gt;Sprite/Image Editing&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;While developing your application if you like to do some specialized operations on image like editing images, creating UI elements etc you should use a tool like &lt;a href=&quot;https://www.adobe.com/in/products/photoshop.html&quot;&gt;Adobe Photoshop&lt;/a&gt; or &lt;a href=&quot;https://www.gimp.org/&quot;&gt;Gimp&lt;/a&gt;. The main advantage of Gimp is that it is free and cross-platform (Photoshop is paid and works only on Windows and Mac), but Photoshop is more powerful and had more support, more specialized filters and gets constant updates.&lt;/p&gt;</content><author><name>Srinivas</name></author><summary type="html">In the previous post, I mentioned some resources related to OpenGL and Shaders. In this post I plan to list some of the tools which are popular and widely used in computer graphics. I also plan to briefly list the pros and cons of some of the tools. I will not be listing tutorials for these tools but you can easily find plenty of them by Googling. This is going to be a long post hence, if you are not interested in some parts like “Specialized Tools” section, I recommend skipping those parts. Basic Tools In this section, I classify some basic tools as per their function (subsections) and use. In general for making a decent application or a game, knowledge of atleast one tool per subsection is required and recommended. Modelling, Texturing, Rendering &amp;amp; Animation The first step of any graphics application development would be modelling an object and texturing it. This is usually followed by lighting, rendering and/or animation. Doing any of these steps like modelling can be really cumbersome in something like OpenGL hence it is better to use these tools instead. You can of course load a modelled and textured object back in OpenGL if your final application is being developed in OpenGL. If it is being developed in any other application like Unity3D, Android etc you can still use these tools. These tools also support a wide variety of 3D model formats (like .obj, .fbx, .colloda etc) and hence can also be used for model conversion, modification of existing 3D models etc.</summary></entry><entry><title type="html">OpenGL and Shaders</title><link href="http://localhost:4000/graphics-resources/text/2018/03/15/openglandshaders/" rel="alternate" type="text/html" title="OpenGL and Shaders" /><published>2018-03-15T03:00:00+05:30</published><updated>2018-03-15T03:00:00+05:30</updated><id>http://localhost:4000/graphics-resources/text/2018/03/15/openglandshaders</id><content type="html" xml:base="http://localhost:4000/graphics-resources/text/2018/03/15/openglandshaders/">&lt;style type=&quot;text/css&quot;&gt;	
+img.img {
+    width: 75%;
+}
+&lt;/style&gt;
+
+&lt;h2 id=&quot;opengl&quot;&gt;&lt;strong&gt;OpenGL&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;If this is your first time reading computer graphics then terms like OpenGL and Shaders might be new to you. To explain it, I would use the following diagram:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;figure&gt;
+&lt;img class=&quot;img&quot; src=&quot;https://mdn.mozillademos.org/files/13334/mdn-games-3d-rendering-pipeline.png&quot; alt=&quot;Rendering Pipeline&quot; /&gt;
+&lt;figcaption&gt;Rendering Pipeline (Reference: Mozilla)&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The above image is an image of the rendering pipeline. Rendering refers to the process of producing a 2D image from a 3D scene description. So, whenever we display any scene on our computer screen, the scene undergoes above steps in background before we see the final pixels on our screen. So, to control the different parts of this pipeline we use APIs (application programming interfaces) like OpenGL and to control what happens in the arrows (Refer above image), we use something called as “shaders”.&lt;/p&gt;
+
+&lt;p&gt;Officially, OpenGL is a family of cross-platform computer graphics APIs that are used to interact with the GPU for rendering. The main advantage of OpenGL is that it is cross-platform (runs on most Operating Systems like Linux, Windows, Mac OSX) and is implemented in most Nvidia and AMD GPUs. There are several versions of the API, and there are implementations, or “bindings” for several different programming languages like C++, Java, Python etc (For the full list refer to this &lt;a href=&quot;https://www.khronos.org/opengl/wiki/Language_bindings&quot;&gt;link&lt;/a&gt;). Versions of OpenGL for embedded systems such as mobile phones are known as OpenGL ES and versions for use on Web pages are called WebGL. Most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course.&lt;/p&gt;
+
+&lt;p&gt;Besides OpenGL, there are other APIs for rendering like DirectX and Vulkan. DirectX, developed by Microsoft is also supported by almost all Nvidia and AMD GPUs but it isn’t cross-platform and runs only on Windows OS. Vulkan is another API developed by &lt;a href=&quot;https://www.khronos.org/&quot;&gt;Khronos Group&lt;/a&gt; (the same group that maintains OpenGL). It is more recent (the first version of Vulkan was released in 2016) and the main motivation behind Vulkan was to give programmers and game designers more low-level access to hardware/GPU to boost performance and efficiency. This of course comes at a cost of more significant up-front work on developer’s part. As per Khronos the Vulkan API, which will complement (and in some cases replace) OpenGL and OpenGL ES.&lt;/p&gt;
+
+&lt;p&gt;The main advantage of using these APIs is that a user gets to control almost each and every part of the rendering pipeline and perform necessary optimizations. In the long run, it is always useful to learn atleast one of these APIs (hence most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course). But, a new user can always use other tools like &lt;a href=&quot;https://threejs.org/&quot;&gt;three.js&lt;/a&gt; (a wrapper around WebGL granting high level access), Unity3D (game engine) etc to significantly reduce programming effort. For example to create a Facebook 3D post of rotating earth you literally require &lt;strong&gt;0 lines of code&lt;/strong&gt; if you use threejs:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Creating &lt;a href=&quot;https://twitter.com/facebook?ref_src=twsrc%5Etfw&quot;&gt;@facebook&lt;/a&gt; 3D posts with &lt;a href=&quot;https://t.co/jLTyKERwDZ&quot;&gt;https://t.co/jLTyKERwDZ&lt;/a&gt; &lt;a href=&quot;https://t.co/joZJ5jB4Ly&quot;&gt;pic.twitter.com/joZJ5jB4Ly&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ricardo Cabello (@mrdoob) &lt;a href=&quot;https://twitter.com/mrdoob/status/967110744566153216?ref_src=twsrc%5Etfw&quot;&gt;February 23, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In comparison to this, if you are using C++ version of OpenGL, just to create a rotating Earth, you will need to include a few libraries, link everything, place the camera, light source, sphere and assign texture. Though this might take a lot more time, it gives you more control.&lt;/p&gt;
+
+&lt;p&gt;Hence, in the subsequent subsections I list various resources for OpenGL. Since knowing the tools are also important, my next post is about these tools.&lt;/p&gt;
+
+&lt;h3 id=&quot;learning-opengl&quot;&gt;&lt;strong&gt;Learning OpenGL&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;books&quot;&gt;&lt;strong&gt;Books&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;In my first post, I had listed some books for learning computer graphics. Usually, some of those books also cover OpenGL. &lt;a href=&quot;http://www.realtimerendering.com/books.html&quot;&gt;Realtime Rendering&lt;/a&gt; has an awesome and updated graphics page with most recent books on Computer Graphics and programming. I would recommend going to their page if you are looking to buy a book on some part of graphics.&lt;/p&gt;
+
+&lt;p&gt;One of the most popular books on OpenGL is &lt;a href=&quot;https://smile.amazon.com/OpenGL-Superbible-Comprehensive-Tutorial-Reference/dp/0672337479&quot;&gt;OpenGL SuperBible&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;videos&quot;&gt;&lt;strong&gt;Videos&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=6-9XFm7XAT8&quot;&gt;Siggraph 2013 video&lt;/a&gt; on “Introduction to OpenGL” Programming.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRtjMdoYXLf6zUMDJVRZYV-6g6n62vet8&quot;&gt;Sonar Systems&lt;/a&gt;: Nice set of tutorials on Modern OpneGL 3.0+ (Windows as well as Mac environment setup explained). Covers even advance topics like Obj loading etc.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLSPw4ASQYyymu3PfG9gxywSPghnSMiOAW&quot;&gt;MakingGamesWithBen&lt;/a&gt;: Tutorials on OpenGL 2D game development.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh&quot;&gt;thebennybox&lt;/a&gt;: Tutorials on OpenGL development.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLRIWtICgwaX0u7Rf9zkZhLoLuZVfUksDP&quot;&gt;ThinMatrix&lt;/a&gt;: Tutorials on OpenGL-3D game development in Java.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;websites&quot;&gt;&lt;strong&gt;Websites&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Some of the websites with tutorials on OpenGL (Reference: &lt;a href=&quot;https://github.com/eug/awesome-opengl#websites&quot;&gt;Awesome page&lt;/a&gt; of OpenGL)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://learnopengl.com&quot;&gt;Learn OpenGL&lt;/a&gt; by &lt;strong&gt;Joey de Vries&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitbucket.org/alfonse/gltut/wiki/Home&quot;&gt;Learning Modern 3D Graphics Programming&lt;/a&gt; by &lt;strong&gt;Jason L. McKesson&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.lighthouse3d.com/tutorials/glsl-core-tutorial&quot;&gt;Light House 3D&lt;/a&gt; by &lt;strong&gt;Light House 3D&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.tomdalling.com/blog/category/modern-opengl&quot;&gt;Modern OpenGL&lt;/a&gt; by &lt;strong&gt;Tom Dalling&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/McNopper/OpenGL&quot;&gt;OpenGL Examples&lt;/a&gt; by &lt;strong&gt;Norbert Nopper&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ogldev.atspace.co.uk&quot;&gt;OpenGL Step by Step&lt;/a&gt; by &lt;strong&gt;Etay Meiri&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://open.gl&quot;&gt;OpenGL Tutorial&lt;/a&gt; by &lt;strong&gt;Alexander Overvoorde&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://antongerdelan.net/opengl/index.html&quot;&gt;OpenGL Tutorial&lt;/a&gt; by &lt;strong&gt;Anton Gerdelan&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.opengl-tutorial.org&quot;&gt;OpenGL Tutorial&lt;/a&gt; by &lt;strong&gt;Bonder Wu&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.songho.ca/opengl&quot;&gt;OpenGL Tutorial&lt;/a&gt; by &lt;strong&gt;Song Ho Ahn&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;opengl-libraries&quot;&gt;&lt;strong&gt;OpenGL Libraries&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Knowing what libraries to use is also important. It can help save the time spent exploring random libraries with limited support. Some of the widely used OpenGL libraries are (Reference: &lt;a href=&quot;https://github.com/eug/awesome-opengl#libraries&quot;&gt;Awesome page&lt;/a&gt; of OpenGL):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://assimp.sourceforge.net&quot;&gt;assimp&lt;/a&gt; - Portable library to import 3D models in a uniform manner.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bulletphysics.org/wordpress&quot;&gt;Bullet&lt;/a&gt; - It provides state of the art collision detection, soft body and rigid body dynamics.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://freeglut.sourceforge.net&quot;&gt;freeGLUT&lt;/a&gt; - Mature library that allows to create/manage windows containing OpenGL contexts.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.glfw.org&quot;&gt;GLFW&lt;/a&gt; - Modern library for creating/interact windows with OpenGL contexts.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/brackeen/glfm&quot;&gt;GLFM&lt;/a&gt; - Supplies an OpenGL ES context and input events for mobile devices and the web.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://glm.g-truc.net/0.9.6/index.html&quot;&gt;glm&lt;/a&gt; - Mathematics library for graphics software based on the GLSL specifications.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mosra/magnum&quot;&gt;Magnum&lt;/a&gt; - It is a 2D/3D graphics engine for modern OpenGL.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://google.github.io/mathfu/&quot;&gt;MathFu&lt;/a&gt; - C++ math library developed primarily for games focused on simplicity and efficiency.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://newtondynamics.com/forum/newton.php&quot;&gt;Newton&lt;/a&gt; - It is a cross-platform life-like physics.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://oglplus.org&quot;&gt;OGLplus&lt;/a&gt; - Collection of libraries which implement an object-oriented facade over OpenGL.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.libsdl.org&quot;&gt;SDL&lt;/a&gt; - Designed to provide low level access to multimedia and graphics hardware.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sfml-dev.org&quot;&gt;SFML&lt;/a&gt; - Simple interface to ease the development of games and multimedia applications.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.lonesock.net/soil.html&quot;&gt;SOIL&lt;/a&gt; - Tiny C library used primarily for uploading textures into OpenGL. (see &lt;a href=&quot;https://bitbucket.org/SpartanJ/soil2&quot;&gt;SOIL2&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/stevenlovegrove/Pangolin&quot;&gt;Pangolin&lt;/a&gt; - Lightweight portable rapid development library for managing OpenGL display / interaction and abstracting video input.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;opengl-profile-loaders&quot;&gt;&lt;strong&gt;OpenGL Profile Loaders&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/skaslev/gl3w&quot;&gt;gl3w&lt;/a&gt; - Simple OpenGL core profile loader.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Dav1dde/glad&quot;&gt;glad&lt;/a&gt; - Multi profile loader-generator based on the official specs.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nnesse/glbindify&quot;&gt;glbindify&lt;/a&gt; - Commmand line tool to generate C bindings for OpenGL, wgl, and glX.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cginternals/glbinding&quot;&gt;glbinding&lt;/a&gt; - Profile loader leveraging C++11 features to provide type safety.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://glew.sourceforge.net&quot;&gt;GLEW&lt;/a&gt; - Mature cross-platform library to load OpenGL extensions.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitbucket.org/alfonse/glloadgen/wiki/Home&quot;&gt;glLoadGen&lt;/a&gt; - Multi profile loader-generator written in Lua.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;opengl-documentation&quot;&gt;&lt;strong&gt;OpenGL Documentation&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;For documentation and API information, the place to go to is the &lt;a href=&quot;https://www.khronos.org/opengl/&quot;&gt;official page on OpenGL&lt;/a&gt; by Khronos Group. It contains various useful links like &lt;a href=&quot;https://www.khronos.org/files/opengl46-quick-reference-card.pdf&quot;&gt;cheat sheets&lt;/a&gt;, &lt;a href=&quot;https://www.khronos.org/opengl/wiki&quot;&gt;wiki&lt;/a&gt; etc.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;shaders&quot;&gt;&lt;strong&gt;Shaders&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;As I had explained in the &lt;a href=&quot;#opengl&quot;&gt;first section&lt;/a&gt; shader helps you control what happens in the arrows. By definition, a shader is a user-defined program designed to run on some stage of a graphics processor. Its purpose is to execute one of the programmable stages of the rendering pipeline. The word “Shader” comes from the word “Shading” which is a technique for producing appropriate levels of color, light etc in an image.&lt;/p&gt;
+
+&lt;p&gt;OpenGL shaders are written in &lt;a href=&quot;https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language&quot;&gt;OpenGL Shading Langugage&lt;/a&gt;. There are also other shading languages which are used by different tools like &lt;a href=&quot;https://en.wikipedia.org/wiki/Cg_(programming_language)&quot;&gt;CG&lt;/a&gt;, &lt;a href=&quot;https://developer.apple.com/documentation/metal&quot;&gt;Metal&lt;/a&gt;, DirectX etc. But, the difference is usually just a change in syntax. The general concepts of shader programming is the same across shaders. So, if you know how to program in say GLSL, it would be easy to convert it to a CG shader.&lt;/p&gt;
+
+&lt;p&gt;In OpenGL shading language there are 5 types of shaders:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vertex Shaders: &lt;code class=&quot;highlighter-rouge&quot;&gt;GL_VERTEX_SHADER&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Tessellation Control and Evaluation Shaders: &lt;code class=&quot;highlighter-rouge&quot;&gt;GL_TESS_CONTROL_SHADER&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;GL_TESS_EVALUATION_SHADER&lt;/code&gt;. (requires GL 4.0 or ARB_tessellation_shader)&lt;/li&gt;
+  &lt;li&gt;Geometry Shaders: &lt;code class=&quot;highlighter-rouge&quot;&gt;GL_GEOMETRY_SHADER&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Fragment Shaders: &lt;code class=&quot;highlighter-rouge&quot;&gt;GL_FRAGMENT_SHADER&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Compute Shaders: &lt;code class=&quot;highlighter-rouge&quot;&gt;GL_COMPUTE_SHADER&lt;/code&gt;. (requires GL 4.3 or ARB_compute_shader)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Compute Shaders are a bit different in the sense that they are programs that run on the graphics card outside of the normal rendering pipeline. They can be used for massively parallel GPGPU algorithms, or to accelerate parts of game rendering. Usually, for starters it is best to learn vertex and fragment shaders.&lt;/p&gt;
+
+&lt;p&gt;There is a myth among programmers that shaders are painful to write. This is both true and false. Usually, what makes shaders painful is the fact shaders are difficult to debug and shader programming is different from conventional programming. It is creative and parallel, but once you get a hang of it, it can be a lot of fun and it is cool to see the actual effects of your program. What I mean is that, though it can be tedious, it can be really satisfying to see the final effects. For example:&lt;/p&gt;
+
+&lt;div&gt;
+&lt;iframe onload=&quot;this.width=screen.width*0.3;this.height=screen.height*0.3;&quot; frameborder=&quot;0&quot; src=&quot;https://www.shadertoy.com/embed/Md3yRB?gui=true&amp;amp;t=10&amp;amp;paused=true&amp;amp;muted=false&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt; 
+
+&lt;iframe onload=&quot;this.width=screen.width*0.3;this.height=screen.height*0.3;&quot; frameborder=&quot;0&quot; src=&quot;https://www.shadertoy.com/embed/4s3SRN?gui=true&amp;amp;t=10&amp;amp;paused=true&amp;amp;muted=false&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;learning-shader-programming&quot;&gt;&lt;strong&gt;Learning Shader Programming&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&quot;books-1&quot;&gt;&lt;strong&gt;Books&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Like I had mentioned before, realtime rendering’s &lt;a href=&quot;http://www.realtimerendering.com/books.html&quot;&gt;book page&lt;/a&gt; is really good and contains a nice collection of computer graphics related to books. So, if you are looking to learn a specific shader language, you should look up corresponding book on that page.&lt;/p&gt;
+
+&lt;h4 id=&quot;websites-and-tutorials&quot;&gt;&lt;strong&gt;Websites and Tutorials&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;If you would like to learn fragment shaders, there are a lot of websites with tutorials on it like &lt;a href=&quot;https://thebookofshaders.com/00/&quot;&gt;The Book on Shaders&lt;/a&gt;. The really cool part of a fragment shader is that, with just one quad (rectangle), you can do really cool stuff.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.shadertoy.com/&quot;&gt;Shadertoy&lt;/a&gt; is a WebGL based shader sharing platform. It has a really huge collection of fragment shaders. It was created by Pol Jeremias and Inigo Quilez from Pixar Animation Studios. The website makes it really easy to write shaders and link other stuff like keyboard inpur, sound, microphone input etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are new to shaders, I would &lt;strong&gt;highly recommend&lt;/strong&gt; going through the following video by Pol Jeremias:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe style=&quot;width:48vw; height:27vw&quot; src=&quot;https://www.youtube.com/embed/JIPOIi7QgYI&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+
+&lt;p&gt;I had attended a similar session at Siggraph Asia 2017. It is a really nice tutorial on fragment shaders and assumes that you have zero background knowledge.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.iquilezles.org/www/index.htm&quot;&gt;Inigo Quilez’s Website&lt;/a&gt;: Inigo Quilez’s website has some really nice experiments, tutorials, code on doing different effects using shaders.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Srinivas</name></author><summary type="html">OpenGL If this is your first time reading computer graphics then terms like OpenGL and Shaders might be new to you. To explain it, I would use the following diagram: Rendering Pipeline (Reference: Mozilla) The above image is an image of the rendering pipeline. Rendering refers to the process of producing a 2D image from a 3D scene description. So, whenever we display any scene on our computer screen, the scene undergoes above steps in background before we see the final pixels on our screen. So, to control the different parts of this pipeline we use APIs (application programming interfaces) like OpenGL and to control what happens in the arrows (Refer above image), we use something called as “shaders”. Officially, OpenGL is a family of cross-platform computer graphics APIs that are used to interact with the GPU for rendering. The main advantage of OpenGL is that it is cross-platform (runs on most Operating Systems like Linux, Windows, Mac OSX) and is implemented in most Nvidia and AMD GPUs. There are several versions of the API, and there are implementations, or “bindings” for several different programming languages like C++, Java, Python etc (For the full list refer to this link). Versions of OpenGL for embedded systems such as mobile phones are known as OpenGL ES and versions for use on Web pages are called WebGL. Most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course.</summary></entry><entry><title type="html">Introduction to Computer Graphics</title><link href="http://localhost:4000/graphics-resources/text/2018/03/15/introtographics/" rel="alternate" type="text/html" title="Introduction to Computer Graphics" /><published>2018-03-15T02:07:00+05:30</published><updated>2018-03-15T02:07:00+05:30</updated><id>http://localhost:4000/graphics-resources/text/2018/03/15/introtographics</id><content type="html" xml:base="http://localhost:4000/graphics-resources/text/2018/03/15/introtographics/">&lt;p&gt;Computer graphics is the science and art of communicating visually via a computer’s display and its interaction devices. It is a cross-disciplinary field in which physics, mathematics, human perception, human-computer interaction, engineering, graphic design, and art all play important roles. We use physics to model light and to perform simulations for animation. We use mathematics to describe shape. Human perceptual abilities determine our allocation of resources—we don’t want to spend time rendering things that will not be noticed. We use engineering in optimizing the allocation of bandwidth, memory, and processor time. Graphic design and art combine with human-computer interaction to make the computer-to-human direction of communication most effective. &lt;a href=&quot;#books&quot;&gt;Reference: CGPP&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;One other definition which I found intriguing was from &lt;a href=&quot;https://sa2017.siggraph.org/attendees/keynote?view=event&amp;amp;eid=207&quot;&gt;Michael Cohen’s talk&lt;/a&gt; during SiggraphAsia 2017. He defined computer graphics as “inverse of computer vision”. The idea was that in computer vision, we try to study our vision system and generate a model of the world whereas in computer graphics we try to generate this world from a model. The key idea he was empasizing was that there is this marriage between the fields of computer vision and computer graphics.&lt;/p&gt;
+
+&lt;p&gt;The field of computer graphics is really interdisciplinary. There are areas of graphics where people work on number theory, differential geometry, robotics, fluid dynamics, data structures and algorithms, deep learning etc. With computer graphics you can create games, interactive application etc. It literally gives visual and creative power to your code.&lt;/p&gt;
+
+&lt;h3 id=&quot;books&quot;&gt;&lt;strong&gt;Books&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The main traditional books of computer graphics are (Reference: &lt;a href=&quot;#references&quot;&gt;Graphic-Codex&lt;/a&gt;):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Computer-Graphics-Foley-Feiner-Hughes/dp/0321399528&quot;&gt;Computer Graphics: Principles and Practice&lt;/a&gt; &lt;strong&gt;(CGPP)&lt;/strong&gt;, 3rd Edition by Hughes et al., 2013 :
+The “bible” of graphics, with deep mathematical coverage and an emphasis on ray tracing techniques that would take four courses to teach completely.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Fundamentals-Computer-Graphics-Peter-Shirley/dp/1568814690/ref=mt_hardcover?_encoding=UTF8&amp;amp;me=&quot;&gt;Fundamentals of Computer Graphics&lt;/a&gt; &lt;strong&gt;(FCG)&lt;/strong&gt;, 4rd Edition by Marschner, Shirley, et al., 2015 :
+A gentle and pragmatic text ideally suited to filling an introductory course.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.realtimerendering.com/&quot;&gt;Real-Time Rendering&lt;/a&gt; &lt;strong&gt;(RTR)&lt;/strong&gt;, 3rd Edition by Akenine-Möller, Haines, and Hoffman, 2008 :
+An advanced survey of real-time techniques emphasizing rasterization, which could easily fill two courses.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.pbrt.org/&quot;&gt;Physically Based Rendering&lt;/a&gt; &lt;strong&gt;(PBRT)&lt;/strong&gt;, 3rd Edition by Pharr, Jakob, and Humphreys, 2016 :
+Systems-based approach to rendering with the definitive software architecture and discussion of Monte Carlo methods. Suitable for a graduate course on rendering. It also won an Academy Award at the Oscars!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/51vE73W%2B5mL._SX399_BO1,204,203,200_.jpg&quot; style=&quot;WIDTH:20%&quot; /&gt;
+&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/51qNqpyfy0L._SX383_BO1,204,203,200_.jpg&quot; style=&quot;WIDTH:20%&quot; /&gt;
+&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/513BJHDPkjL._SX325_BO1,204,203,200_.jpg&quot; style=&quot;WIDTH:20%&quot; /&gt;
+&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/61IucdGnZcL._SX401_BO1,204,203,200_.jpg&quot; style=&quot;WIDTH:20%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;courses&quot;&gt;&lt;strong&gt;Courses&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;Some of the MOOCs available online for learning computer graphics are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://udacity.com/course/interactive-3d-graphics--cs291&quot;&gt;Interactive 3D Graphics&lt;/a&gt;: This is an entry-level(undergrad) CS course on computer graphics by Autodesk. All the assignments are done in Javascript and use &lt;a href=&quot;https://threejs.org/&quot;&gt;three.js&lt;/a&gt; (which is a wrapper around WebGL).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/interactive-computer-graphics&quot;&gt;Interactive Computer Graphics&lt;/a&gt;: This is a specialized course on graphics with focus on design of tools developed in computer graphics research field.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://sites.google.com/site/marclevoylectures/&quot;&gt;Digital Photography&lt;/a&gt;: An entry-level course on digital photography by &lt;a href=&quot;http://graphics.stanford.edu/~levoy/&quot;&gt;Marc Levoy&lt;/a&gt; taught at Google in spring of 2016.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of the courses with notes available online:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-837-computer-graphics-fall-2012/index.htm&quot;&gt;Computer Graphics&lt;/a&gt;: This is an entry-level(undergrad) CS course on computer graphics at MIT.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.cs.cornell.edu/courses/cs4620/2017sp/&quot;&gt;Introduction to Computer Graphics&lt;/a&gt;: This is an entry-level(undergrad) CS course on computer graphics by &lt;a href=&quot;https://www.cs.cornell.edu/~srm/&quot;&gt;Steve Marschner&lt;/a&gt; from Cornell held in Spring of 2017.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.cs.cornell.edu/courses/cs6630/2015fa/index.shtml&quot;&gt;Realistic Image Synthesis&lt;/a&gt;: This is a graduate level computer graphics course with focus on physically based rendering by &lt;a href=&quot;https://www.cs.cornell.edu/~srm/&quot;&gt;Steve Marschner&lt;/a&gt; from Cornell held in fall of 2015.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://graphicscodex.com/syllabus.xml&quot;&gt;Graphic-Codex&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Srinivas</name></author><summary type="html">Computer graphics is the science and art of communicating visually via a computer’s display and its interaction devices. It is a cross-disciplinary field in which physics, mathematics, human perception, human-computer interaction, engineering, graphic design, and art all play important roles. We use physics to model light and to perform simulations for animation. We use mathematics to describe shape. Human perceptual abilities determine our allocation of resources—we don’t want to spend time rendering things that will not be noticed. We use engineering in optimizing the allocation of bandwidth, memory, and processor time. Graphic design and art combine with human-computer interaction to make the computer-to-human direction of communication most effective. Reference: CGPP One other definition which I found intriguing was from Michael Cohen’s talk during SiggraphAsia 2017. He defined computer graphics as “inverse of computer vision”. The idea was that in computer vision, we try to study our vision system and generate a model of the world whereas in computer graphics we try to generate this world from a model. The key idea he was empasizing was that there is this marriage between the fields of computer vision and computer graphics. The field of computer graphics is really interdisciplinary. There are areas of graphics where people work on number theory, differential geometry, robotics, fluid dynamics, data structures and algorithms, deep learning etc. With computer graphics you can create games, interactive application etc. It literally gives visual and creative power to your code.</summary></entry></feed>
