@@ -26,8 +26,8 @@ comments:
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
   # - twitter: "https://twitter.com/twitter/"
-  - github: "https://github.com/gsssrao/graphics-resources"
-  - envelope: "mailto:sai.rao1996@gmail.com"
+  # - github: "https://github.com/gsssrao/graphics-resources"
+  # - envelope: "mailto:sai.rao1996@gmail.com"
 
 defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
 sass: {style: expanded}
