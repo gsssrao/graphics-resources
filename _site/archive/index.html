@@ -12,35 +12,46 @@
 <script type="text/javascript">
 window.logo = {};
 logo.value = 1;
+logo.set = function(){
+	if(logo.value == 0){
+		document.getElementById("logo0").style.display = "none";
+		document.getElementById("logo1").style.display = "block";
+		logo.increment();
+	}
+	else if(logo.value == 1){
+		document.getElementById("logo1").style.display = "none";
+		document.getElementById("logo2").style.display = "block";
+		logo.increment();
+	}
+	else if(logo.value == 2){
+		document.getElementById("logo2").style.display = "none";
+		document.getElementById("logo3").style.display = "block";
+		logo.increment();
+	}
+	else if(logo.value == 3){
+		document.getElementById("logo3").style.display = "none";
+		document.getElementById("logo4").style.display = "block";
+		logo.increment();
+	}
+	else if(logo.value == 4){
+		document.getElementById("logo4").style.display = "none";
+		document.getElementById("logo0").style.display = "block";
+		logo.value = 0;
+	}
+
+}
 logo.increment = function() { logo.value++; }
 </script>
-<img class="logo" onclick="
-if (window.logo.value == 0) {
-	this.style='position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;';
-    this.src='/images/Cornell_box.png';
-    window.logo.increment();
-}
-else if (window.logo.value == 1){
-	this.style='position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%;';
-	this.src='/images/teapot.png';
-	window.logo.increment();	
-}
-else if (window.logo.value == 2){
-	this.style='position:absolute; TOP: 2.5%; LEFT:3%; WIDTH:13%;';
-	this.src='/images/dragon.png';
-	window.logo.increment();	
-}
-else if (window.logo.value == 3){
-	this.style='position:absolute; TOP: 3.5%; LEFT:3.5%; WIDTH:12%;';
-	this.src='/images/suzanne.png';
-	window.logo.increment();
-}
-else if (window.logo.value == 4){
-	this.style='position:absolute; TOP: 1.5%; LEFT:5%; WIDTH:9%;';
-	this.src='/images/bunny.png';
-	window.logo.value = 0;
-}
-" src="/images/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
+
+<img id="logo1" onclick="window.logo.set()" src="/images/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
+
+<img id="logo2" onclick="window.logo.set()" src="/images/teapot.png" STYLE="position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%; display:none">
+
+<img id="logo3" onclick="window.logo.set()" src="/images/dragon.png" STYLE="position:absolute; TOP: 2.5%; LEFT:3%; WIDTH:13%; display:none">
+
+<img id="logo4" onclick="window.logo.set()" src="/images/suzanne.png" STYLE="position:absolute; TOP: 3.5%; LEFT:3.5%; WIDTH:12%; display:none">
+
+<img id="logo0" onclick="window.logo.set()" src="/images/bunny.png" STYLE="position:absolute; TOP: 1.5%; LEFT:5%; WIDTH:9%; display:none">
 
 <title>
  Posts › Graphics Resources
