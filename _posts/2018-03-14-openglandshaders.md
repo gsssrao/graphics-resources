@@ -53,7 +53,7 @@ The above image is an image of the rendering pipeline. Rendering refers to the p
 
 Officially, OpenGL is a family of cross-platform computer graphics APIs that are used to interact with the GPU for rendering. The main advantage of OpenGL is that it is cross-platform (runs on most Operating Systems like Linux, Windows, Mac OSX) and is implemented in most Nvidia and AMD GPUs. There are several versions of the API, and there are implementations, or "bindings" for several different programming languages like C++, Java, Python etc (For the full list refer to this [link](https://www.khronos.org/opengl/wiki/Language_bindings)). Versions of OpenGL for embedded systems such as mobile phones are known as OpenGL ES and versions for use on Web pages are called WebGL. Most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course.
 
-Besides OpenGL, there are other APIs for rendering like DirectX and Vulkan. DirectX, developed by Microsoft is also supported by almost all Nvidia and AMD GPUs but it isn't cross-platform and runs only on Windows OS. Vulkan is another API developed by [Khronos Group](https://www.khronos.org/) (the same group that maintains OpenGL). It is more recent (the first version of Vulkan was released in 2016) and the main motivation behind Vulkan was to give programmers and game designers more low-level access to hardware/GPU to boost performance and efficiency. This of course comes at a cost of more significant up-front work on developer's part. As per Khronos the Vulkan API, which will complement (and in some cases replace) OpenGL and OpenGL ES.
+Besides OpenGL, there are other APIs for rendering like DirectX and Vulkan. DirectX, developed by Microsoft is also supported by almost all Nvidia and AMD GPUs but it isn't cross-platform and runs only on Windows OS. Vulkan is another API developed by [Khronos Group](https://www.khronos.org/) (the same group that maintains OpenGL). It is more recent (the first version of Vulkan was released in 2016) and the main motivation behind Vulkan was to give programmers and game designers more low-level access to hardware/GPU to boost performance and efficiency. This of course comes at a cost of significant up-front work (i.e. more coding and programming effort) on the developer's part. As per Khronos the Vulkan API, which will complement (and in some cases replace) OpenGL and OpenGL ES.
 
 The main advantage of using these APIs is that a user gets to control almost each and every part of the rendering pipeline and perform necessary optimizations. In the long run, it is always useful to learn atleast one of these APIs (hence most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course). But, a new user can always use other tools like [three.js](https://threejs.org/) (a wrapper around WebGL granting high level access), Unity3D (game engine) etc to significantly reduce programming effort. For example to create a Facebook 3D post of rotating earth you literally require **0 lines of code** if you use threejs:
 
@@ -117,6 +117,23 @@ Knowing what libraries to use is also important. It can help save the time spent
 
 ### **OpenGL Profile Loaders**
 
+If you have been using OpenGL, you might have come across terms like OpenGL core or OpenGL extensions etc and it might be confusing when to use say GLEW or say gl3w and when not to use. The answer depends on your Operating System. Core OpenGL functions refer to features which were introduces as a part of the OpenGL specification i.e. (a specific version of OpenGL) whereas extensions are functions that provide extended functionality which the core of OpenGL does not provide. 
+
+So, OpenGL functions (core or extension) must be loaded at runtime, dynamically, whenever the function in question is not part of the platform's original OpenGL ABI (application binary interface):
+- For Windows the ABI covers OpenGL-1.1
+- For Linux the ABI covers OpenGL-1.2 
+- For MacOS X, the OpenGL version available and the ABI version with it is defined by the OS version.
+
+So, this leads to the following rules:
+
+- In Windows you're going to need a function loader for pretty much everything, except single textured, shaderless, fixed function drawing; it may be possible to load further functionality, but this is not a given.
+- In Linux you're going to need a function loader for pretty much everything, except basic multitextured with just the basic texenv modes, shaderless, fixed function drawing; it may be possible to load further functionality, but this is not a given. 
+- In Mac OSX you don't need a function loader at all, but the OpenGL features you can use are strictly determined by the OS version, either you have it, or you don't.
+
+The above comments were part of a [stackoverflow post](https://stackoverflow.com/questions/27873784/when-do-i-need-to-use-an-opengl-function-loader). For more details please refer it.
+
+A list of profile loaders are (Reference: [Awesome page](https://github.com/eug/awesome-opengl#libraries) of OpenGL):
+
 * [gl3w](https://github.com/skaslev/gl3w) - Simple OpenGL core profile loader.
 * [glad](https://github.com/Dav1dde/glad) - Multi profile loader-generator based on the official specs.
 * [glbindify](https://github.com/nnesse/glbindify) - Commmand line tool to generate C bindings for OpenGL, wgl, and glX.
@@ -153,6 +170,8 @@ There is a myth among programmers that shaders are painful to write. This is bot
 
 <iframe onload="this.width=screen.width*0.3;this.height=screen.height*0.3;" frameborder="0" src="https://www.shadertoy.com/embed/4s3SRN?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
 </div>
+
+The two examples above are fragment shaders from shadertoy (more details in the next subsection). It may be possible that when you pressed the run button, the page may have lagged or got stuck. This is because these shaders try to run on your web browser by utilizing your PC's graphic cards. So, if you don't have GPU and have a weak integrated graphics card, the browser might have crashed.
 
 ### **Learning Shader Programming**
 

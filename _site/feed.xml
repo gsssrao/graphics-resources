@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-20T03:09:39+05:30</updated><id>http://localhost:4000/</id><title type="html">Graphics Resources</title><subtitle>Collection of resources of computer graphics and a bit of CHI</subtitle><author><name>Srinivas</name></author><entry><title type="html">Tools for Computer Graphics</title><link href="http://localhost:4000/text/2018/03/15/tools/" rel="alternate" type="text/html" title="Tools for Computer Graphics" /><published>2018-03-15T04:07:00+05:30</published><updated>2018-03-15T04:07:00+05:30</updated><id>http://localhost:4000/text/2018/03/15/tools</id><content type="html" xml:base="http://localhost:4000/text/2018/03/15/tools/">&lt;ul class=&quot;section-nav&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-21T05:06:17+05:30</updated><id>http://localhost:4000/</id><title type="html">Graphics Resources</title><subtitle>Collection of resources of computer graphics and a bit of CHI</subtitle><author><name>Srinivas</name></author><entry><title type="html">Tools for Computer Graphics</title><link href="http://localhost:4000/text/2018/03/15/tools/" rel="alternate" type="text/html" title="Tools for Computer Graphics" /><published>2018-03-15T04:07:00+05:30</published><updated>2018-03-15T04:07:00+05:30</updated><id>http://localhost:4000/text/2018/03/15/tools</id><content type="html" xml:base="http://localhost:4000/text/2018/03/15/tools/">&lt;ul class=&quot;section-nav&quot;&gt;
 &lt;li class=&quot;toc-entry toc-h2&quot;&gt;&lt;a href=&quot;#basic-tools&quot;&gt;Basic Tools&lt;/a&gt;
 &lt;ul&gt;
 &lt;li class=&quot;toc-entry toc-h3&quot;&gt;&lt;a href=&quot;#modelling-texturing-rendering--animation&quot;&gt;Modelling, Texturing, Rendering &amp;amp; Animation&lt;/a&gt;
@@ -51,7 +51,7 @@ img.img {
 
 &lt;h3 id=&quot;modelling-texturing-rendering--animation&quot;&gt;&lt;strong&gt;Modelling, Texturing, Rendering &amp;amp; Animation&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;The first step of any graphics application development would be modelling an object and texturing it. This is usually followed by lighting, rendering and/or animation. Doing any of these steps like modelling can be really cumbersome in something like OpenGL hence it is better to use these tools instead. You can of course load a modelled and textured object back in OpenGL if your final application is being developed in OpenGL. If it is being developed in any other application like Unity3D, Android etc you can still use these tools. These tools also support a wide variety of 3D model formats (like .obj, .fbx, .colloda etc) and hence can also be used for model conversion, modification of existing 3D models etc.&lt;/p&gt;
+&lt;p&gt;The first step of any graphics application development would be modelling an object and texturing it. This is usually followed by lighting, rendering and/or animation. Doing any of these steps like modelling can be really cumbersome in something like OpenGL hence it is better to use these tools instead. You can of course load a modelled and textured object back in OpenGL if your final application is being developed in OpenGL. If it is being developed in any other application like Unity3D, Android etc you can still use these tools. These tools also support a wide variety of 3D model formats (like .obj, .fbx, .colloda etc) and hence can also be used for model conversion, modification of existing 3D models etc. I might be a &lt;strong&gt;very biased&lt;/strong&gt; here but personally I like Blender and I would recommend learning either Blender or Maya.&lt;/p&gt;
 
 &lt;h4 id=&quot;blender&quot;&gt;&lt;strong&gt;Blender&lt;/strong&gt;&lt;/h4&gt;
 
@@ -63,7 +63,7 @@ img.img {
 
 &lt;h4 id=&quot;maya&quot;&gt;&lt;strong&gt;Maya&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.autodesk.in/products/maya/overview&quot;&gt;Maya&lt;/a&gt; by AutoDesk is a 3D animation, modeling, simulation and rendering software. Though it is not free, it is really powerful and is an industry standard. For example, look at this video portraying features of blender:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.autodesk.in/products/maya/overview&quot;&gt;Maya&lt;/a&gt; by AutoDesk is a 3D animation, modeling, simulation and rendering software. Though it is not free, it is really powerful and is an industry standard. For example, look at this video portraying features of Maya:&lt;/p&gt;
 
 &lt;center&gt;
 &lt;video STYLE=&quot;width:48vw; height:27vw&quot; controls=&quot;controls&quot;&gt;
@@ -93,7 +93,7 @@ img.img {
 
 &lt;h3 id=&quot;game-engines--web&quot;&gt;&lt;strong&gt;Game Engines &amp;amp; Web&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;p&gt;Once you have models and or animation ready, the next step to make the actual application or game. For this, you can use a Game Engine. By definition, game engines are tools available for game designers to code and plan out a game quickly and easily without building one from the ground up. If you are writing your application in OpenGL, you can of course use libraries and make your application, but game engines make it really easy to do the same. They give lots of functionality and can heavily save your time. In comparison, if you want low level access, infinite flexibility over what is internally going on and want to build everything by yourself, OpenGL is the way to go. In fact, most AAA game studios develop their own game engines from scratch optimized for their specific games. For example, &lt;a href=&quot;https://www.easports.com/fifa&quot;&gt;FIFA&lt;/a&gt; is made using &lt;a href=&quot;https://www.ea.com/frostbite&quot;&gt;Frostbite game engine&lt;/a&gt; developed by EA.&lt;/p&gt;
+&lt;p&gt;Once you have models and or animation ready, the next step to make the actual application or game. For this, you can use a Game Engine. By definition, game engines are tools available for game designers to code and plan out a game quickly and easily without building one from the ground up. If you are writing your application in OpenGL, you can of course use libraries and make your application, but game engines make it really easy to do the same. They give lots of functionality and can heavily save your time. In comparison, if you want low level access, infinite flexibility over what is internally going on and want to build everything by yourself, OpenGL is the way to go. In fact, most AAA game studios (A AAA game (usually pronounced “triple A game”) is just a classification referring to big game studios, typically having higher development and marketing budgets (Reference: Wikipedia)) develop their own game engines from scratch optimized for their specific games. For example, &lt;a href=&quot;https://www.easports.com/fifa&quot;&gt;FIFA&lt;/a&gt; is made using &lt;a href=&quot;https://www.ea.com/frostbite&quot;&gt;Frostbite game engine&lt;/a&gt; developed by EA.&lt;/p&gt;
 
 &lt;h4 id=&quot;unity-3d&quot;&gt;&lt;strong&gt;Unity-3D&lt;/strong&gt;&lt;/h4&gt;
 
@@ -128,7 +128,7 @@ img.img {
 
 &lt;h4 id=&quot;threejs&quot;&gt;&lt;strong&gt;threejs&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;To discuss &lt;a href=&quot;https://threejs.org/&quot;&gt;threejs&lt;/a&gt;, I will have to mention a few things about Web. Since the advent of gaming engines, people have been trying to do similar things with Web. Programmers have been trying to create wrappers around WebGL which allow users to create rich &lt;a href=&quot;https://threejs.org/examples/css3d_periodictable.html&quot;&gt;3D websites&lt;/a&gt; and games which are rendered in Web Browser (i.e. can be accessed using a URL without downloading anything). An example of such tool is threejs. It is a cross platform javascript API which can be used to create and display animated 3D graphics in a browser. Though it may be not as powerful as game engines like Unreal and Unity, it has the advantage that user doesn’t need to install anything. It too has support for various libraries and can be used for making VR and AR applications using &lt;a href=&quot;https://aframe.io/&quot;&gt;Aframe&lt;/a&gt; etc. Some of really cool websites made with threejs are:&lt;/p&gt;
+&lt;p&gt;To discuss &lt;a href=&quot;https://threejs.org/&quot;&gt;threejs&lt;/a&gt;, I will have to mention a few things about Web. Since the advent of gaming engines, people have been trying to do similar things with Web. Programmers have been trying to create wrappers around WebGL which allow users to create rich &lt;a href=&quot;https://threejs.org/examples/css3d_periodictable.html&quot;&gt;3D websites&lt;/a&gt; and games which are rendered in Web Browser (i.e. can be accessed using a URL without downloading anything). An example of such tool is threejs. It is a cross platform javascript API which can be used to create and display animated 3D graphics in a browser. Though it may be not as powerful as game engines like Unreal and Unity in terms of rendering capabilities, it has the advantage that the user doesn’t need to install anything. It too has support for various libraries and can be used for making VR and AR applications using &lt;a href=&quot;https://aframe.io/&quot;&gt;Aframe&lt;/a&gt; etc. Some really cool websites made with threejs are (Click on the image below to get redirected to that website):&lt;/p&gt;
 
 &lt;center&gt;
 &lt;a href=&quot;https://poly.google.com/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width: 30%;&quot; src=&quot;https://threejs.org/files/projects/poly.png&quot; /&gt;&lt;/a&gt;
@@ -136,7 +136,7 @@ img.img {
 &lt;a href=&quot;http://www.ro.me/&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;width: 30%;&quot; src=&quot;https://threejs.org/files/projects/rome.jpg&quot; /&gt;&lt;/a&gt;
 &lt;/center&gt;
 
-&lt;p&gt;Similar to visual editor in game engines, threejs also has an &lt;a href=&quot;https://threejs.org/editor/&quot;&gt;online editor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One of my favourites is ro.me (the rightmost image). Similar to visual editor in game engines, threejs also has an &lt;a href=&quot;https://threejs.org/editor/&quot;&gt;online editor&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;image-and-video-manipulation&quot;&gt;&lt;strong&gt;Image and Video manipulation&lt;/strong&gt;&lt;/h3&gt;
 
@@ -385,7 +385,7 @@ img.img {
 
 &lt;p&gt;Officially, OpenGL is a family of cross-platform computer graphics APIs that are used to interact with the GPU for rendering. The main advantage of OpenGL is that it is cross-platform (runs on most Operating Systems like Linux, Windows, Mac OSX) and is implemented in most Nvidia and AMD GPUs. There are several versions of the API, and there are implementations, or “bindings” for several different programming languages like C++, Java, Python etc (For the full list refer to this &lt;a href=&quot;https://www.khronos.org/opengl/wiki/Language_bindings&quot;&gt;link&lt;/a&gt;). Versions of OpenGL for embedded systems such as mobile phones are known as OpenGL ES and versions for use on Web pages are called WebGL. Most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course.&lt;/p&gt;
 
-&lt;p&gt;Besides OpenGL, there are other APIs for rendering like DirectX and Vulkan. DirectX, developed by Microsoft is also supported by almost all Nvidia and AMD GPUs but it isn’t cross-platform and runs only on Windows OS. Vulkan is another API developed by &lt;a href=&quot;https://www.khronos.org/&quot;&gt;Khronos Group&lt;/a&gt; (the same group that maintains OpenGL). It is more recent (the first version of Vulkan was released in 2016) and the main motivation behind Vulkan was to give programmers and game designers more low-level access to hardware/GPU to boost performance and efficiency. This of course comes at a cost of more significant up-front work on developer’s part. As per Khronos the Vulkan API, which will complement (and in some cases replace) OpenGL and OpenGL ES.&lt;/p&gt;
+&lt;p&gt;Besides OpenGL, there are other APIs for rendering like DirectX and Vulkan. DirectX, developed by Microsoft is also supported by almost all Nvidia and AMD GPUs but it isn’t cross-platform and runs only on Windows OS. Vulkan is another API developed by &lt;a href=&quot;https://www.khronos.org/&quot;&gt;Khronos Group&lt;/a&gt; (the same group that maintains OpenGL). It is more recent (the first version of Vulkan was released in 2016) and the main motivation behind Vulkan was to give programmers and game designers more low-level access to hardware/GPU to boost performance and efficiency. This of course comes at a cost of significant up-front work (i.e. more coding and programming effort) on the developer’s part. As per Khronos the Vulkan API, which will complement (and in some cases replace) OpenGL and OpenGL ES.&lt;/p&gt;
 
 &lt;p&gt;The main advantage of using these APIs is that a user gets to control almost each and every part of the rendering pipeline and perform necessary optimizations. In the long run, it is always useful to learn atleast one of these APIs (hence most CS courses on computer graphics expect students to learn OpenGL or some variant of it as a part of the course). But, a new user can always use other tools like &lt;a href=&quot;https://threejs.org/&quot;&gt;three.js&lt;/a&gt; (a wrapper around WebGL granting high level access), Unity3D (game engine) etc to significantly reduce programming effort. For example to create a Facebook 3D post of rotating earth you literally require &lt;strong&gt;0 lines of code&lt;/strong&gt; if you use threejs:&lt;/p&gt;
 
@@ -455,6 +455,27 @@ img.img {
 
 &lt;h3 id=&quot;opengl-profile-loaders&quot;&gt;&lt;strong&gt;OpenGL Profile Loaders&lt;/strong&gt;&lt;/h3&gt;
 
+&lt;p&gt;If you have been using OpenGL, you might have come across terms like OpenGL core or OpenGL extensions etc and it might be confusing when to use say GLEW or say gl3w and when not to use. The answer depends on your Operating System. Core OpenGL functions refer to features which were introduces as a part of the OpenGL specification i.e. (a specific version of OpenGL) whereas extensions are functions that provide extended functionality which the core of OpenGL does not provide.&lt;/p&gt;
+
+&lt;p&gt;So, OpenGL functions (core or extension) must be loaded at runtime, dynamically, whenever the function in question is not part of the platform’s original OpenGL ABI (application binary interface):&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;For Windows the ABI covers OpenGL-1.1&lt;/li&gt;
+  &lt;li&gt;For Linux the ABI covers OpenGL-1.2&lt;/li&gt;
+  &lt;li&gt;For MacOS X, the OpenGL version available and the ABI version with it is defined by the OS version.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, this leads to the following rules:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In Windows you’re going to need a function loader for pretty much everything, except single textured, shaderless, fixed function drawing; it may be possible to load further functionality, but this is not a given.&lt;/li&gt;
+  &lt;li&gt;In Linux you’re going to need a function loader for pretty much everything, except basic multitextured with just the basic texenv modes, shaderless, fixed function drawing; it may be possible to load further functionality, but this is not a given.&lt;/li&gt;
+  &lt;li&gt;In Mac OSX you don’t need a function loader at all, but the OpenGL features you can use are strictly determined by the OS version, either you have it, or you don’t.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The above comments were part of a &lt;a href=&quot;https://stackoverflow.com/questions/27873784/when-do-i-need-to-use-an-opengl-function-loader&quot;&gt;stackoverflow post&lt;/a&gt;. For more details please refer it.&lt;/p&gt;
+
+&lt;p&gt;A list of profile loaders are (Reference: &lt;a href=&quot;https://github.com/eug/awesome-opengl#libraries&quot;&gt;Awesome page&lt;/a&gt; of OpenGL):&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/skaslev/gl3w&quot;&gt;gl3w&lt;/a&gt; - Simple OpenGL core profile loader.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/Dav1dde/glad&quot;&gt;glad&lt;/a&gt; - Multi profile loader-generator based on the official specs.&lt;/li&gt;
@@ -495,6 +516,8 @@ img.img {
 
 &lt;iframe onload=&quot;this.width=screen.width*0.3;this.height=screen.height*0.3;&quot; frameborder=&quot;0&quot; src=&quot;https://www.shadertoy.com/embed/4s3SRN?gui=true&amp;amp;t=10&amp;amp;paused=true&amp;amp;muted=false&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
+
+&lt;p&gt;The two examples above are fragment shaders from shadertoy (more details in the next subsection). It may be possible that when you pressed the run button, the page may have lagged or got stuck. This is because these shaders try to run on your web browser by utilizing your PC’s graphic cards. So, if you don’t have GPU and have a weak integrated graphics card, the browser might have crashed.&lt;/p&gt;
 
 &lt;h3 id=&quot;learning-shader-programming&quot;&gt;&lt;strong&gt;Learning Shader Programming&lt;/strong&gt;&lt;/h3&gt;
 
