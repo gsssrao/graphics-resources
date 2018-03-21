@@ -43,6 +43,17 @@ logo.set = function(){
 logo.increment = function() { logo.value++; }
 </script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116162607-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116162607-1');
+</script>
+
+
 <img id="logo1" onclick="window.logo.set()" src="/images/Cornell_box.png" STYLE="position:absolute; TOP: 3.5%; LEFT:4%; WIDTH:10%;">
 
 <img id="logo2" onclick="window.logo.set()" src="/images/teapot.png" STYLE="position:absolute; TOP: 3.5%; LEFT:3%; WIDTH:13%; display:none">
